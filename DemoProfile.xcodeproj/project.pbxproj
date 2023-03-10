@@ -11,6 +11,10 @@
 		F8E9C04D29BB691F006A164A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C04C29BB691F006A164A /* ContentView.swift */; };
 		F8E9C04F29BB691F006A164A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C04E29BB691F006A164A /* Assets.xcassets */; };
 		F8E9C05229BB691F006A164A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C05129BB691F006A164A /* Preview Assets.xcassets */; };
+		F8E9C08629BB7870006A164A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C08329BB7870006A164A /* Montserrat-SemiBold.ttf */; };
+		F8E9C08729BB7870006A164A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C08429BB7870006A164A /* Montserrat-Bold.ttf */; };
+		F8E9C08829BB7870006A164A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C08529BB7870006A164A /* Montserrat-Regular.ttf */; };
+		F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C08A29BB79F6006A164A /* FontMontserrat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		F8E9C04C29BB691F006A164A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F8E9C04E29BB691F006A164A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8E9C05129BB691F006A164A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8E9C08329BB7870006A164A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		F8E9C08429BB7870006A164A /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		F8E9C08529BB7870006A164A /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		F8E9C08929BB78D5006A164A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F8E9C08A29BB79F6006A164A /* FontMontserrat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontMontserrat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +60,13 @@
 		F8E9C04929BB691F006A164A /* DemoProfile */ = {
 			isa = PBXGroup;
 			children = (
-				F8E9C04A29BB691F006A164A /* DemoProfileApp.swift */,
-				F8E9C04C29BB691F006A164A /* ContentView.swift */,
-				F8E9C04E29BB691F006A164A /* Assets.xcassets */,
+				F8E9C05829BB6D25006A164A /* App */,
+				F8E9C05B29BB6D41006A164A /* Models */,
+				F8E9C05929BB6D2C006A164A /* Views */,
+				F8E9C05A29BB6D37006A164A /* ViewModels */,
+				F8E9C05C29BB6D8E006A164A /* Extensions */,
+				F8E9C05D29BB75C2006A164A /* Ressources */,
+				F8E9C08929BB78D5006A164A /* Info.plist */,
 				F8E9C05029BB691F006A164A /* Preview Content */,
 			);
 			path = DemoProfile;
@@ -65,6 +78,63 @@
 				F8E9C05129BB691F006A164A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8E9C05829BB6D25006A164A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F8E9C04A29BB691F006A164A /* DemoProfileApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F8E9C05929BB6D2C006A164A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8E9C04C29BB691F006A164A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8E9C05A29BB6D37006A164A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F8E9C05B29BB6D41006A164A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8E9C05C29BB6D8E006A164A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8E9C05D29BB75C2006A164A /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F8E9C04E29BB691F006A164A /* Assets.xcassets */,
+				F8E9C05E29BB75DA006A164A /* Font */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		F8E9C05E29BB75DA006A164A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F8E9C08A29BB79F6006A164A /* FontMontserrat.swift */,
+				F8E9C08429BB7870006A164A /* Montserrat-Bold.ttf */,
+				F8E9C08529BB7870006A164A /* Montserrat-Regular.ttf */,
+				F8E9C08329BB7870006A164A /* Montserrat-SemiBold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +195,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E9C08729BB7870006A164A /* Montserrat-Bold.ttf in Resources */,
+				F8E9C08629BB7870006A164A /* Montserrat-SemiBold.ttf in Resources */,
 				F8E9C05229BB691F006A164A /* Preview Assets.xcassets in Resources */,
+				F8E9C08829BB7870006A164A /* Montserrat-Regular.ttf in Resources */,
 				F8E9C04F29BB691F006A164A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +212,7 @@
 			files = (
 				F8E9C04D29BB691F006A164A /* ContentView.swift in Sources */,
 				F8E9C04B29BB691F006A164A /* DemoProfileApp.swift in Sources */,
+				F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +344,7 @@
 				DEVELOPMENT_TEAM = H5J3S6F67R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoProfile/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +374,7 @@
 				DEVELOPMENT_TEAM = H5J3S6F67R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoProfile/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
