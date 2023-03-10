@@ -15,6 +15,10 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
                 .fontMontserrat(weight: .bold, size: 14)
+                .foregroundColor(.colorTheme.blue)
+                .padding()
+                .background(Color.colorTheme.background)
+                .cornerRadius(10)
         }
         .padding()
     }

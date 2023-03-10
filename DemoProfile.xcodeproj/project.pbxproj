@@ -15,6 +15,7 @@
 		F8E9C08729BB7870006A164A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C08429BB7870006A164A /* Montserrat-Bold.ttf */; };
 		F8E9C08829BB7870006A164A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C08529BB7870006A164A /* Montserrat-Regular.ttf */; };
 		F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C08A29BB79F6006A164A /* FontMontserrat.swift */; };
+		F8E9C08D29BB8574006A164A /* Color + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C08C29BB8574006A164A /* Color + ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F8E9C08529BB7870006A164A /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		F8E9C08929BB78D5006A164A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F8E9C08A29BB79F6006A164A /* FontMontserrat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontMontserrat.swift; sourceTree = "<group>"; };
+		F8E9C08C29BB8574006A164A /* Color + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		F8E9C05C29BB6D8E006A164A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F8E9C08C29BB8574006A164A /* Color + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				F8E9C04D29BB691F006A164A /* ContentView.swift in Sources */,
 				F8E9C04B29BB691F006A164A /* DemoProfileApp.swift in Sources */,
 				F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */,
+				F8E9C08D29BB8574006A164A /* Color + ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
