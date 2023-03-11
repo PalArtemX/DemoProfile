@@ -7,17 +7,3 @@
 
 import SwiftUI
 
-// MARK: - Icon TabBar
-struct IconTabBar {
-    
-    let account = Image("account")
-    let basket = Image("basket")
-    let house = Image("house")
-    let like = Image("like")
-    let message = Image("message")
-    
-}
-
-extension Image {
-    static let iconTabBar = IconTabBar()
-}

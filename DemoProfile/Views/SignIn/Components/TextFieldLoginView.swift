@@ -34,11 +34,11 @@ struct TextFieldLoginView: View {
             // MARK: - TextField
             ZStack {
                 TextField("", text: $text)
+                    .padding()
+                    .frame(maxHeight: 29)
                     .focused($focusedField, equals: .text)
-                    .fontMontserrat(weight: .regular, size: 16)
+                    .fontMontserrat(weight: .medium, size: 14)
                     .foregroundColor(.colorTheme.text)
-                    .padding(.horizontal)
-                    .padding(.vertical, 5)
                     .background(
                         Color.colorTheme.backgroundLoginTextField
                     )
@@ -47,7 +47,7 @@ struct TextFieldLoginView: View {
                 if text.isEmpty {
                     Text(placeholder)
                         .foregroundColor(.colorTheme.textSecondary.opacity(0.8))
-                        .fontMontserrat(weight: .regular, size: 14)
+                        .fontMontserrat(weight: .medium, size: 11)
                         .onTapGesture {
                             focusedField = .text
                         }

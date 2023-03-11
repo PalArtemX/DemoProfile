@@ -30,6 +30,10 @@
 		F8E9C0AF29BC88AB006A164A /* SignInPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0AE29BC88AB006A164A /* SignInPageView.swift */; };
 		F8E9C0B329BC8942006A164A /* TextFieldLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */; };
 		F8E9C0B529BC9970006A164A /* ButtonBlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0B429BC9970006A164A /* ButtonBlueView.swift */; };
+		F8E9C0B729BCA091006A164A /* AlreadyHaveAnAccountView .swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0B629BCA091006A164A /* AlreadyHaveAnAccountView .swift */; };
+		F8E9C0B929BCA1DD006A164A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C0B829BCA1DD006A164A /* Montserrat-Medium.ttf */; };
+		F8E9C0BC29BCA577006A164A /* ButtonSignInAlternativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0BB29BCA577006A164A /* ButtonSignInAlternativeView.swift */; };
+		F8E9C0BE29BCA741006A164A /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0BD29BCA741006A164A /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		F8E9C0AE29BC88AB006A164A /* SignInPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageView.swift; sourceTree = "<group>"; };
 		F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLoginView.swift; sourceTree = "<group>"; };
 		F8E9C0B429BC9970006A164A /* ButtonBlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBlueView.swift; sourceTree = "<group>"; };
+		F8E9C0B629BCA091006A164A /* AlreadyHaveAnAccountView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlreadyHaveAnAccountView .swift"; sourceTree = "<group>"; };
+		F8E9C0B829BCA1DD006A164A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		F8E9C0BB29BCA577006A164A /* ButtonSignInAlternativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSignInAlternativeView.swift; sourceTree = "<group>"; };
+		F8E9C0BD29BCA741006A164A /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,7 @@
 			children = (
 				F8E9C04E29BB691F006A164A /* Assets.xcassets */,
 				F8E9C05E29BB75DA006A164A /* Font */,
+				F8E9C0BD29BCA741006A164A /* Resources.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -169,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C08A29BB79F6006A164A /* FontMontserrat.swift */,
+				F8E9C0B829BCA1DD006A164A /* Montserrat-Medium.ttf */,
 				F8E9C08429BB7870006A164A /* Montserrat-Bold.ttf */,
 				F8E9C08529BB7870006A164A /* Montserrat-Regular.ttf */,
 				F8E9C08329BB7870006A164A /* Montserrat-SemiBold.ttf */,
@@ -180,10 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C09929BBB25D006A164A /* MainTabBarView.swift */,
-				F8E9C09029BB97BC006A164A /* TabBarItemView.swift */,
-				F8E9C09529BB9EB5006A164A /* TabBarItem.swift */,
-				F8E9C09729BBAFC3006A164A /* TabBarView.swift */,
-				F8E9C09B29BBB3B9006A164A /* TabBarItemsPreferenceKey.swift */,
+				F8E9C0BF29BCABF2006A164A /* Components */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -192,10 +199,31 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C0AE29BC88AB006A164A /* SignInPageView.swift */,
-				F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */,
-				F8E9C0B429BC9970006A164A /* ButtonBlueView.swift */,
+				F8E9C0BA29BCA49C006A164A /* Components */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		F8E9C0BA29BCA49C006A164A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */,
+				F8E9C0B429BC9970006A164A /* ButtonBlueView.swift */,
+				F8E9C0B629BCA091006A164A /* AlreadyHaveAnAccountView .swift */,
+				F8E9C0BB29BCA577006A164A /* ButtonSignInAlternativeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F8E9C0BF29BCABF2006A164A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F8E9C09029BB97BC006A164A /* TabBarItemView.swift */,
+				F8E9C09529BB9EB5006A164A /* TabBarItem.swift */,
+				F8E9C09729BBAFC3006A164A /* TabBarView.swift */,
+				F8E9C09B29BBB3B9006A164A /* TabBarItemsPreferenceKey.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +288,7 @@
 				F8E9C08629BB7870006A164A /* Montserrat-SemiBold.ttf in Resources */,
 				F8E9C05229BB691F006A164A /* Preview Assets.xcassets in Resources */,
 				F8E9C08829BB7870006A164A /* Montserrat-Regular.ttf in Resources */,
+				F8E9C0B929BCA1DD006A164A /* Montserrat-Medium.ttf in Resources */,
 				F8E9C04F29BB691F006A164A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,11 +302,14 @@
 			files = (
 				F8E9C09129BB97BC006A164A /* TabBarItemView.swift in Sources */,
 				F8E9C0A029BBC1A7006A164A /* View + ext.swift in Sources */,
+				F8E9C0BC29BCA577006A164A /* ButtonSignInAlternativeView.swift in Sources */,
 				F8E9C0A829BBC7F8006A164A /* BasketView.swift in Sources */,
 				F8E9C09829BBAFC3006A164A /* TabBarView.swift in Sources */,
+				F8E9C0B729BCA091006A164A /* AlreadyHaveAnAccountView .swift in Sources */,
 				F8E9C0B329BC8942006A164A /* TextFieldLoginView.swift in Sources */,
 				F8E9C04B29BB691F006A164A /* DemoProfileApp.swift in Sources */,
 				F8E9C09A29BBB25D006A164A /* MainTabBarView.swift in Sources */,
+				F8E9C0BE29BCA741006A164A /* Resources.swift in Sources */,
 				F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */,
 				F8E9C08D29BB8574006A164A /* Color + ext.swift in Sources */,
 				F8E9C0B529BC9970006A164A /* ButtonBlueView.swift in Sources */,

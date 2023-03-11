@@ -13,6 +13,7 @@ struct FontMontserrat: ViewModifier {
         case bold = "Montserrat-Bold"
         case regular = "Montserrat-Regular"
         case semibold = "Montserrat-SemiBold"
+        case medium = "Montserrat-Medium"
     }
     
     let weight: Weight

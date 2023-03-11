@@ -12,13 +12,11 @@ struct SignInPageView: View {
     @State private var lastName = ""
     @State private var email = ""
     
-    private let paddingVTextField: CGFloat = 17
-    
     var body: some View {
         ZStack {
             Color.colorTheme.background.ignoresSafeArea()
             
-            VStack {
+            VStack(spacing: 35) {
                 Spacer()
                 Text("Sign in")
                     .fontMontserrat(weight: .semibold, size: 25)
@@ -26,24 +24,37 @@ struct SignInPageView: View {
                 Spacer()
                 
                 TextFieldLoginView(text: $firstName, placeholder: "First name")
-                    .padding(.vertical, paddingVTextField)
                 
                 TextFieldLoginView(text: $lastName, placeholder: "Last name")
-                    .padding(.vertical, paddingVTextField)
                 
                 TextFieldLoginView(text: $email, placeholder: "Email")
-                    .padding(.vertical, paddingVTextField)
                 
-                ButtonBlueView(title: "Sign in") {
+                VStack(alignment: .leading, spacing: 18) {
+                    ButtonBlueView(title: "Sign in") {
+                        
+                        // action
+                    }
                     
-                    // action
-                    
+                    AlreadyHaveAnAccountView {
+                        
+                        // action
+                    }
                 }
-                .padding(.vertical, paddingVTextField)
+                
+                Spacer()
+                
+                VStack(alignment: .leading, spacing: 48) {
+                    ButtonSignInAlternativeView(with: .google) {
+                        print("Sign in with Google")
+                    }
+                    ButtonSignInAlternativeView(with: .apple) {
+                        print("Sign in with Apple")
+                    }
+                }
                 
                 Spacer()
             }
-            .padding(.horizontal, 45)
+            .padding(.horizontal, 44)
             
             
            

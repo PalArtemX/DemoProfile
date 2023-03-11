@@ -38,9 +38,9 @@ struct ButtonBlueView: View {
                 }
             }
             .foregroundColor(.colorTheme.foregroundColorButton)
-            .fontMontserrat(weight: .bold, size: 15)
+            .fontMontserrat(weight: .bold, size: 14)
         }
-        .frame(maxWidth: .infinity, maxHeight: 50)
+        .frame(maxWidth: .infinity, maxHeight: 46)
         .background(Color.colorTheme.blue)
         .cornerRadius(15)
     }
