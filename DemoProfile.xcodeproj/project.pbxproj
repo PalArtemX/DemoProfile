@@ -34,6 +34,7 @@
 		F8E9C0B929BCA1DD006A164A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C0B829BCA1DD006A164A /* Montserrat-Medium.ttf */; };
 		F8E9C0BC29BCA577006A164A /* ButtonSignInAlternativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0BB29BCA577006A164A /* ButtonSignInAlternativeView.swift */; };
 		F8E9C0BE29BCA741006A164A /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0BD29BCA741006A164A /* Resources.swift */; };
+		F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C129BCBF4B006A164A /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		F8E9C0B829BCA1DD006A164A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		F8E9C0BB29BCA577006A164A /* ButtonSignInAlternativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSignInAlternativeView.swift; sourceTree = "<group>"; };
 		F8E9C0BD29BCA741006A164A /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		F8E9C0C129BCBF4B006A164A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C0AD29BC8824006A164A /* SignIn */,
+				F8E9C0C029BCBF31006A164A /* Login */,
 				F8E9C09429BB9E8B006A164A /* TabBar */,
 				F8E9C0A329BBC753006A164A /* HomeView.swift */,
 				F8E9C0A529BBC7C8006A164A /* LikeView.swift */,
@@ -226,6 +229,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		F8E9C0C029BCBF31006A164A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F8E9C0C129BCBF4B006A164A /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +319,7 @@
 				F8E9C0B729BCA091006A164A /* AlreadyHaveAnAccountView .swift in Sources */,
 				F8E9C0B329BC8942006A164A /* TextFieldLoginView.swift in Sources */,
 				F8E9C04B29BB691F006A164A /* DemoProfileApp.swift in Sources */,
+				F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */,
 				F8E9C09A29BBB25D006A164A /* MainTabBarView.swift in Sources */,
 				F8E9C0BE29BCA741006A164A /* Resources.swift in Sources */,
 				F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */,

@@ -33,16 +33,32 @@ struct TextFieldLoginView: View {
         ZStack {
             // MARK: - TextField
             ZStack {
-                TextField("", text: $text)
-                    .padding()
-                    .frame(maxHeight: 29)
-                    .focused($focusedField, equals: .text)
-                    .fontMontserrat(weight: .medium, size: 14)
-                    .foregroundColor(.colorTheme.text)
-                    .background(
-                        Color.colorTheme.backgroundLoginTextField
-                    )
-                    .clipShape(Capsule())
+                Group {
+                    if !hiddenPassword {
+                        TextField("", text: $text)
+                            .padding()
+                            .frame(maxHeight: 29)
+                            .focused($focusedField, equals: .text)
+                            .fontMontserrat(weight: .medium, size: 14)
+                            .foregroundColor(.colorTheme.text)
+                            .background(
+                                Color.colorTheme.backgroundLoginTextField
+                            )
+                        .clipShape(Capsule())
+                    } else {
+                        SecureField("", text: $text)
+                            .padding()
+                            .frame(maxHeight: 29)
+                            .focused($focusedField, equals: .text)
+                            .fontMontserrat(weight: .medium, size: 14)
+                            .foregroundColor(.colorTheme.text)
+                            .background(
+                                Color.colorTheme.backgroundLoginTextField
+                            )
+                        .clipShape(Capsule())
+                    }
+                }
+                
                 
                 if text.isEmpty {
                     Text(placeholder)
@@ -62,7 +78,7 @@ struct TextFieldLoginView: View {
                         actionHiddenPassword()
                         hiddenPassword.toggle()
                     } label: {
-                        Image(systemName: hiddenPassword ? "eye.fill" : "eye.slash.fill")
+                        Image(systemName: hiddenPassword ? "eye.slash.fill" : "eye")
                             .foregroundColor(.colorTheme.text)
                             .symbolRenderingMode(.hierarchical)
                     }
