@@ -19,6 +19,7 @@ struct ColorTheme {
     let iconTabBarInactive = Color("iconTabBarInactive")
     let text = Color("text")
     let textSecondary = Color("textSecondary")
+    let foregroundColorButton = Color("foregroundColorButton")
 }
 
 

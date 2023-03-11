@@ -12,18 +12,18 @@ struct SignInPageView: View {
     @State private var lastName = ""
     @State private var email = ""
     
-    private let paddingVTextField: CGFloat = 20
+    private let paddingVTextField: CGFloat = 17
     
     var body: some View {
         ZStack {
             Color.colorTheme.background.ignoresSafeArea()
             
             VStack {
-                
+                Spacer()
                 Text("Sign in")
                     .fontMontserrat(weight: .semibold, size: 25)
-                    .padding(.bottom, 50)
-                
+            
+                Spacer()
                 
                 TextFieldLoginView(text: $firstName, placeholder: "First name")
                     .padding(.vertical, paddingVTextField)
@@ -31,12 +31,19 @@ struct SignInPageView: View {
                 TextFieldLoginView(text: $lastName, placeholder: "Last name")
                     .padding(.vertical, paddingVTextField)
                 
-                TextFieldLoginView(text: $email, placeholder: "Last name")
+                TextFieldLoginView(text: $email, placeholder: "Email")
                     .padding(.vertical, paddingVTextField)
                 
+                ButtonBlueView(title: "Sign in") {
+                    
+                    // action
+                    
+                }
+                .padding(.vertical, paddingVTextField)
                 
+                Spacer()
             }
-            .padding(30)
+            .padding(.horizontal, 45)
             
             
            

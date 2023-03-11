@@ -29,6 +29,7 @@
 		F8E9C0AC29BBC831006A164A /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0AB29BBC831006A164A /* AccountView.swift */; };
 		F8E9C0AF29BC88AB006A164A /* SignInPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0AE29BC88AB006A164A /* SignInPageView.swift */; };
 		F8E9C0B329BC8942006A164A /* TextFieldLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */; };
+		F8E9C0B529BC9970006A164A /* ButtonBlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0B429BC9970006A164A /* ButtonBlueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		F8E9C0AB29BBC831006A164A /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		F8E9C0AE29BC88AB006A164A /* SignInPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageView.swift; sourceTree = "<group>"; };
 		F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLoginView.swift; sourceTree = "<group>"; };
+		F8E9C0B429BC9970006A164A /* ButtonBlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBlueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			children = (
 				F8E9C0AE29BC88AB006A164A /* SignInPageView.swift */,
 				F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */,
+				F8E9C0B429BC9970006A164A /* ButtonBlueView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				F8E9C09A29BBB25D006A164A /* MainTabBarView.swift in Sources */,
 				F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */,
 				F8E9C08D29BB8574006A164A /* Color + ext.swift in Sources */,
+				F8E9C0B529BC9970006A164A /* ButtonBlueView.swift in Sources */,
 				F8E9C09629BB9EB5006A164A /* TabBarItem.swift in Sources */,
 				F8E9C0AC29BBC831006A164A /* AccountView.swift in Sources */,
 				F8E9C0A429BBC753006A164A /* HomeView.swift in Sources */,
