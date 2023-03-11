@@ -27,31 +27,25 @@ struct LoginView: View {
                 
                 TextFieldLoginView(text: $firstName, placeholder: "First name")
                 
-                TextFieldLoginView(hiddenPassword: true, text: $password, placeholder: "Password", hiddenPasswordIcon: true) {
-                    
-                }
+                SecureFieldLoginView(text: $password, placeholder: "Password")
                 
+                Spacer()
                 Spacer()
                 
                 ButtonBlueView(title: "Login") {
-                    
                     demoProfileViewModel.userLoggedIn = true
                 }
                 
-                
-                
-                
                 Spacer()
                 Spacer()
-                
             }
             .padding(.horizontal, 44)
             
-            
-            
         }
+        
     }
 }
+
 
 
 

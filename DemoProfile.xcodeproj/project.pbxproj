@@ -37,6 +37,7 @@
 		F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C129BCBF4B006A164A /* LoginView.swift */; };
 		F8E9C0C429BCC490006A164A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C329BCC490006A164A /* User.swift */; };
 		F8E9C0C629BCC4E5006A164A /* DemoProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C529BCC4E5006A164A /* DemoProfileViewModel.swift */; };
+		F8E9C0C829BCD79F006A164A /* SecureFieldLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C729BCD79F006A164A /* SecureFieldLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		F8E9C0C129BCBF4B006A164A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F8E9C0C329BCC490006A164A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F8E9C0C529BCC4E5006A164A /* DemoProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProfileViewModel.swift; sourceTree = "<group>"; };
+		F8E9C0C729BCD79F006A164A /* SecureFieldLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */,
+				F8E9C0C729BCD79F006A164A /* SecureFieldLoginView.swift */,
 				F8E9C0B429BC9970006A164A /* ButtonBlueView.swift */,
 				F8E9C0B629BCA091006A164A /* AlreadyHaveAnAccountView .swift */,
 				F8E9C0BB29BCA577006A164A /* ButtonSignInAlternativeView.swift */,
@@ -329,6 +332,7 @@
 				F8E9C09A29BBB25D006A164A /* MainTabBarView.swift in Sources */,
 				F8E9C0BE29BCA741006A164A /* Resources.swift in Sources */,
 				F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */,
+				F8E9C0C829BCD79F006A164A /* SecureFieldLoginView.swift in Sources */,
 				F8E9C08D29BB8574006A164A /* Color + ext.swift in Sources */,
 				F8E9C0B529BC9970006A164A /* ButtonBlueView.swift in Sources */,
 				F8E9C09629BB9EB5006A164A /* TabBarItem.swift in Sources */,

@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct SignInPageView: View {
+    
+    private enum Field: Hashable {
+        case firstName
+        case lastName
+        case email
+    }
+    
+    @FocusState private var focusedField: Field?
+    
     @State private var firstName = ""
     @State private var lastName = ""
     @State private var email = ""
@@ -26,10 +35,13 @@ struct SignInPageView: View {
                 Spacer()
                 
                 TextFieldLoginView(text: $firstName, placeholder: "First name")
+                    .focused($focusedField, equals: .firstName)
                 
                 TextFieldLoginView(text: $lastName, placeholder: "Last name")
+                    .focused($focusedField, equals: .lastName)
                 
                 TextFieldLoginView(text: $email, placeholder: "Email")
+                    .focused($focusedField, equals: .email)
                 
                 VStack(alignment: .leading, spacing: 18) {
                     ButtonBlueView(title: "Sign in") {
@@ -61,6 +73,28 @@ struct SignInPageView: View {
         }
         .sheet(isPresented: $isShowLoginView) {
             LoginView()
+        }
+        .toolbar {
+            ToolbarItem(placement: .keyboard) {
+                Button {
+                    focusedField = nil
+                } label: {
+                    Label("Down", systemImage: "keyboard.chevron.compact.down")
+                }
+            }
+            ToolbarItem(placement: .keyboard) {
+                Button {
+                    if focusedField == .firstName {
+                        focusedField = .lastName
+                    } else if focusedField == .lastName {
+                        focusedField = .email
+                    } else if focusedField == .email {
+                        focusedField = .firstName
+                    }
+                } label: {
+                    Label("Next", systemImage: "arrow.turn.down.left")
+                }
+            }
         }
     }
 }
