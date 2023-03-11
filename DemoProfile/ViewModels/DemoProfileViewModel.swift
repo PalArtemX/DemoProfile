@@ -68,6 +68,11 @@ extension DemoProfileViewModel {
             titleAlert = "Write your email"
             showAlert = true
             return false
+        } else if !name.email.isValidEmail() {
+            messageAlert = "Email is incorrect, enter the correct email!"
+            titleAlert = "Write your email"
+            showAlert = true
+            return false
         } else {
             return true
         }

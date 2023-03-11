@@ -38,6 +38,7 @@
 		F8E9C0C429BCC490006A164A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C329BCC490006A164A /* User.swift */; };
 		F8E9C0C629BCC4E5006A164A /* DemoProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C529BCC4E5006A164A /* DemoProfileViewModel.swift */; };
 		F8E9C0C829BCD79F006A164A /* SecureFieldLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C729BCD79F006A164A /* SecureFieldLoginView.swift */; };
+		F8E9C0CA29BD02DC006A164A /* String + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C929BD02DC006A164A /* String + ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		F8E9C0C329BCC490006A164A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F8E9C0C529BCC4E5006A164A /* DemoProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProfileViewModel.swift; sourceTree = "<group>"; };
 		F8E9C0C729BCD79F006A164A /* SecureFieldLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldLoginView.swift; sourceTree = "<group>"; };
+		F8E9C0C929BD02DC006A164A /* String + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				F8E9C08C29BB8574006A164A /* Color + ext.swift */,
 				F8E9C08E29BB95F1006A164A /* Image + ext.swift */,
 				F8E9C09F29BBC1A7006A164A /* View + ext.swift */,
+				F8E9C0C929BD02DC006A164A /* String + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				F8E9C0B729BCA091006A164A /* AlreadyHaveAnAccountView .swift in Sources */,
 				F8E9C0B329BC8942006A164A /* TextFieldLoginView.swift in Sources */,
 				F8E9C04B29BB691F006A164A /* DemoProfileApp.swift in Sources */,
+				F8E9C0CA29BD02DC006A164A /* String + ext.swift in Sources */,
 				F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */,
 				F8E9C09A29BBB25D006A164A /* MainTabBarView.swift in Sources */,
 				F8E9C0BE29BCA741006A164A /* Resources.swift in Sources */,
