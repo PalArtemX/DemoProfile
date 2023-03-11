@@ -27,6 +27,8 @@
 		F8E9C0A829BBC7F8006A164A /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0A729BBC7F8006A164A /* BasketView.swift */; };
 		F8E9C0AA29BBC81A006A164A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0A929BBC81A006A164A /* MessageView.swift */; };
 		F8E9C0AC29BBC831006A164A /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0AB29BBC831006A164A /* AccountView.swift */; };
+		F8E9C0AF29BC88AB006A164A /* SignInPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0AE29BC88AB006A164A /* SignInPageView.swift */; };
+		F8E9C0B329BC8942006A164A /* TextFieldLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		F8E9C0A729BBC7F8006A164A /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
 		F8E9C0A929BBC81A006A164A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		F8E9C0AB29BBC831006A164A /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F8E9C0AE29BC88AB006A164A /* SignInPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageView.swift; sourceTree = "<group>"; };
+		F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		F8E9C05929BB6D2C006A164A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8E9C0AD29BC8824006A164A /* SignIn */,
 				F8E9C09429BB9E8B006A164A /* TabBar */,
 				F8E9C0A329BBC753006A164A /* HomeView.swift */,
 				F8E9C0A529BBC7C8006A164A /* LikeView.swift */,
@@ -179,6 +184,15 @@
 				F8E9C09B29BBB3B9006A164A /* TabBarItemsPreferenceKey.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F8E9C0AD29BC8824006A164A /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				F8E9C0AE29BC88AB006A164A /* SignInPageView.swift */,
+				F8E9C0B229BC8942006A164A /* TextFieldLoginView.swift */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,7 @@
 				F8E9C0A029BBC1A7006A164A /* View + ext.swift in Sources */,
 				F8E9C0A829BBC7F8006A164A /* BasketView.swift in Sources */,
 				F8E9C09829BBAFC3006A164A /* TabBarView.swift in Sources */,
+				F8E9C0B329BC8942006A164A /* TextFieldLoginView.swift in Sources */,
 				F8E9C04B29BB691F006A164A /* DemoProfileApp.swift in Sources */,
 				F8E9C09A29BBB25D006A164A /* MainTabBarView.swift in Sources */,
 				F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */,
@@ -269,6 +284,7 @@
 				F8E9C08F29BB95F1006A164A /* Image + ext.swift in Sources */,
 				F8E9C0AA29BBC81A006A164A /* MessageView.swift in Sources */,
 				F8E9C09C29BBB3B9006A164A /* TabBarItemsPreferenceKey.swift in Sources */,
+				F8E9C0AF29BC88AB006A164A /* SignInPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
