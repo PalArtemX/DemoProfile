@@ -36,34 +36,24 @@ struct TextFieldLoginView: View {
                 Group {
                     if !hiddenPassword {
                         TextField("", text: $text)
-                            .padding()
-                            .frame(maxHeight: 29)
-                            .focused($focusedField, equals: .text)
-                            .fontMontserrat(weight: .medium, size: 14)
-                            .foregroundColor(.colorTheme.text)
-                            .background(
-                                Color.colorTheme.backgroundLoginTextField
-                            )
-                        .clipShape(Capsule())
                     } else {
                         SecureField("", text: $text)
-                            .padding()
-                            .frame(maxHeight: 29)
-                            .focused($focusedField, equals: .text)
-                            .fontMontserrat(weight: .medium, size: 14)
-                            .foregroundColor(.colorTheme.text)
-                            .background(
-                                Color.colorTheme.backgroundLoginTextField
-                            )
-                        .clipShape(Capsule())
                     }
                 }
-                
+                .padding()
+                .frame(height: 33)
+                .focused($focusedField, equals: .text)
+                .fontMontserrat(weight: .medium, size: 14)
+                .foregroundColor(.colorTheme.text)
+                .background(
+                    Color.colorTheme.backgroundLoginTextField
+                )
+                .clipShape(Capsule())
                 
                 if text.isEmpty {
                     Text(placeholder)
                         .foregroundColor(.colorTheme.textSecondary.opacity(0.8))
-                        .fontMontserrat(weight: .medium, size: 11)
+                        .fontMontserrat(weight: .medium, size: 12)
                         .onTapGesture {
                             focusedField = .text
                         }

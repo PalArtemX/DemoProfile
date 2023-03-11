@@ -33,16 +33,21 @@ struct ButtonBlueView: View {
                         Spacer()
                         Spacer()
                     }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 46)
+                    
                 } else {
                     Text(title)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 46)
                 }
             }
+            .background(Color.colorTheme.blue)
             .foregroundColor(.colorTheme.foregroundColorButton)
             .fontMontserrat(weight: .bold, size: 14)
+            .cornerRadius(15)
         }
-        .frame(maxWidth: .infinity, maxHeight: 46)
-        .background(Color.colorTheme.blue)
-        .cornerRadius(15)
+        
     }
 }
 

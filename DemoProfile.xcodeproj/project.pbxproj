@@ -35,6 +35,8 @@
 		F8E9C0BC29BCA577006A164A /* ButtonSignInAlternativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0BB29BCA577006A164A /* ButtonSignInAlternativeView.swift */; };
 		F8E9C0BE29BCA741006A164A /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0BD29BCA741006A164A /* Resources.swift */; };
 		F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C129BCBF4B006A164A /* LoginView.swift */; };
+		F8E9C0C429BCC490006A164A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C329BCC490006A164A /* User.swift */; };
+		F8E9C0C629BCC4E5006A164A /* DemoProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C529BCC4E5006A164A /* DemoProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		F8E9C0BB29BCA577006A164A /* ButtonSignInAlternativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSignInAlternativeView.swift; sourceTree = "<group>"; };
 		F8E9C0BD29BCA741006A164A /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		F8E9C0C129BCBF4B006A164A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F8E9C0C329BCC490006A164A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F8E9C0C529BCC4E5006A164A /* DemoProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 		F8E9C05A29BB6D37006A164A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F8E9C0C529BCC4E5006A164A /* DemoProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 		F8E9C05B29BB6D41006A164A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F8E9C0C329BCC490006A164A /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,6 +339,8 @@
 				F8E9C0AA29BBC81A006A164A /* MessageView.swift in Sources */,
 				F8E9C09C29BBB3B9006A164A /* TabBarItemsPreferenceKey.swift in Sources */,
 				F8E9C0AF29BC88AB006A164A /* SignInPageView.swift in Sources */,
+				F8E9C0C429BCC490006A164A /* User.swift in Sources */,
+				F8E9C0C629BCC4E5006A164A /* DemoProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

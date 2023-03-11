@@ -12,6 +12,8 @@ struct SignInPageView: View {
     @State private var lastName = ""
     @State private var email = ""
     
+    @State private var isShowLoginView = false
+    
     var body: some View {
         ZStack {
             Color.colorTheme.background.ignoresSafeArea()
@@ -31,13 +33,11 @@ struct SignInPageView: View {
                 
                 VStack(alignment: .leading, spacing: 18) {
                     ButtonBlueView(title: "Sign in") {
-                        
-                        // action
+                        print("blue button")
                     }
                     
                     AlreadyHaveAnAccountView {
-                        
-                        // action
+                        isShowLoginView.toggle()
                     }
                 }
                 
@@ -58,6 +58,9 @@ struct SignInPageView: View {
             
             
            
+        }
+        .sheet(isPresented: $isShowLoginView) {
+            LoginView()
         }
     }
 }

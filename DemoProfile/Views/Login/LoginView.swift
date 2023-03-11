@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @EnvironmentObject var demoProfileViewModel: DemoProfileViewModel
+    
     @State private var firstName = ""
     @State private var password = ""
     
@@ -32,7 +35,7 @@ struct LoginView: View {
                 
                 ButtonBlueView(title: "Login") {
                     
-                    // action
+                    demoProfileViewModel.userLoggedIn = true
                 }
                 
                 
@@ -57,5 +60,6 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            .environmentObject(DemoProfileViewModel())
     }
 }

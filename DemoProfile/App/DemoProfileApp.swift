@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct DemoProfileApp: App {
+    
+    @StateObject var demoProfileViewModel = DemoProfileViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            MainTabBarView()
+            if demoProfileViewModel.userLoggedIn {
+                MainTabBarView()
+                    .environmentObject(demoProfileViewModel)
+            } else {
+                SignInPageView()
+                    .environmentObject(demoProfileViewModel)
+            }
         }
     }
 }
