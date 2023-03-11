@@ -15,6 +15,7 @@ struct SignInPageView: View {
         case email
     }
     
+    @EnvironmentObject var demoProfileViewModel: DemoProfileViewModel
     @FocusState private var focusedField: Field?
     
     @State private var firstName = ""
@@ -30,24 +31,27 @@ struct SignInPageView: View {
             VStack(spacing: 35) {
                 Spacer()
                 Text("Sign in")
+                    .foregroundColor(.colorTheme.text)
                     .fontMontserrat(weight: .semibold, size: 25)
-            
+                
                 Spacer()
                 
                 TextFieldLoginView(text: $firstName, placeholder: "First name")
                     .focused($focusedField, equals: .firstName)
-                
                 TextFieldLoginView(text: $lastName, placeholder: "Last name")
                     .focused($focusedField, equals: .lastName)
-                
                 TextFieldLoginView(text: $email, placeholder: "Email")
                     .focused($focusedField, equals: .email)
                 
                 VStack(alignment: .leading, spacing: 18) {
                     ButtonBlueView(title: "Sign in") {
-                        print("blue button")
+                        if demoProfileViewModel.registrationUser(firstName: firstName, lastName: lastName, email: email) {
+                            firstName = ""
+                            lastName = ""
+                            email = ""
+                            focusedField = nil
+                        }
                     }
-                    
                     AlreadyHaveAnAccountView {
                         isShowLoginView.toggle()
                     }
@@ -69,7 +73,11 @@ struct SignInPageView: View {
             .padding(.horizontal, 44)
             
             
-           
+            
+        }
+        .alert(isPresented: $demoProfileViewModel.showAlert) {
+            Alert(title: Text(demoProfileViewModel.titleAlert),
+                  message: Text(demoProfileViewModel.messageAlert))
         }
         .sheet(isPresented: $isShowLoginView) {
             LoginView()
@@ -105,5 +113,6 @@ struct SignInPageView: View {
 struct SignInPageView_Previews: PreviewProvider {
     static var previews: some View {
         SignInPageView()
+            .environmentObject(DemoProfileViewModel())
     }
 }

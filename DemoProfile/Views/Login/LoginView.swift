@@ -21,6 +21,7 @@ struct LoginView: View {
             VStack(spacing: 35) {
                 Spacer()
                 Text("Welcome back")
+                    .foregroundColor(.colorTheme.text)
                     .fontMontserrat(weight: .semibold, size: 25)
                 
                 Spacer()
@@ -33,7 +34,9 @@ struct LoginView: View {
                 Spacer()
                 
                 ButtonBlueView(title: "Login") {
-                    demoProfileViewModel.userLoggedIn = true
+                    //demoProfileViewModel.signIn()
+                    firstName = ""
+                    password = ""
                 }
                 
                 Spacer()
