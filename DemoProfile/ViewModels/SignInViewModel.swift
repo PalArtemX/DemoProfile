@@ -13,7 +13,6 @@ final class SignInViewModel: ObservableObject {
     @Published private(set) var userLoggedIn = false
     @Published private(set) var messageAlert = ""
     @Published private(set) var titleAlert = ""
-    @Published var nicknameUnique = false
     @Published var showAlert = false
     
     private(set) var users: [User] = [] {
@@ -21,7 +20,6 @@ final class SignInViewModel: ObservableObject {
             putUsers()
         }
     }
-    
     private let userKey = "userKey"
     
     init() {
@@ -31,7 +29,6 @@ final class SignInViewModel: ObservableObject {
 }
 
 
-// MARK: - user registration
 extension SignInViewModel {
     // Since there is no password input in the user interface during registration, registration and user login are implemented with stubs
     
@@ -51,14 +48,6 @@ extension SignInViewModel {
         }
     }
     
-    private func signIn() {
-        userLoggedIn = true
-    }
-    
-    private func signOut() {
-        userLoggedIn = false
-    }
-    
     func registrationUser(firstName: String, lastName: String, email: String) -> Bool {
         let user = User(firstName: firstName, lastName: lastName, email: email, password: "pass")
         
@@ -68,16 +57,20 @@ extension SignInViewModel {
             titleAlert = "The user is already registered"
             messageAlert = "The user is already registered, log in with your username"
             showAlert = true
-            print("+++++++")
-            print("+++++++ \(users)")
             return false
         } else {
-            print("-------")
-            print("------- \(users)")
             users.append(user)
             signIn()
             return true
         }
+    }
+    
+    private func signIn() {
+        userLoggedIn = true
+    }
+    
+    private func signOut() {
+        userLoggedIn = false
     }
     
     private func putUsers() {
@@ -118,7 +111,6 @@ extension SignInViewModel {
         } else {
             return true
         }
-        
     }
     
 }

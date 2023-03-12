@@ -21,6 +21,7 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
+            // MARK: - Background
             Color.colorTheme.background.ignoresSafeArea()
             
             VStack(spacing: 35) {
@@ -31,6 +32,7 @@ struct LoginView: View {
                 
                 Spacer()
                 
+                // MARK: - Textfields
                 TextFieldLoginView(text: $firstName, placeholder: "First name")
                     .focused($focusedField, equals: .firstName)
                 SecureFieldLoginView(text: $password, placeholder: "Password")
@@ -39,6 +41,7 @@ struct LoginView: View {
                 Spacer()
                 Spacer()
                 
+                // MARK: - Button Login
                 ButtonBlueView(title: "Login") {
                     if demoProfileViewModel.loginUser(firstName: firstName, password: password.lowercased()) {
                         firstName = ""

@@ -26,6 +26,7 @@ struct SignInPageView: View {
     
     var body: some View {
         ZStack {
+            // MARK: - Background
             Color.colorTheme.background.ignoresSafeArea()
             
             VStack(spacing: 35) {
@@ -33,9 +34,9 @@ struct SignInPageView: View {
                 Text("Sign in")
                     .foregroundColor(.colorTheme.text)
                     .fontMontserrat(weight: .semibold, size: 25)
-                
                 Spacer()
                 
+                // MARK: - TextFields
                 TextFieldLoginView(text: $firstName, placeholder: "First name")
                     .focused($focusedField, equals: .firstName)
                 TextFieldLoginView(text: $lastName, placeholder: "Last name")
@@ -43,6 +44,7 @@ struct SignInPageView: View {
                 TextFieldLoginView(text: $email, placeholder: "Email")
                     .focused($focusedField, equals: .email)
                 
+                // MARK: - Button Sign in
                 VStack(alignment: .leading, spacing: 18) {
                     ButtonBlueView(title: "Sign in") {
                         if demoProfileViewModel.registrationUser(firstName: firstName, lastName: lastName, email: email.lowercased()) {
@@ -56,24 +58,16 @@ struct SignInPageView: View {
                         isShowLoginView.toggle()
                     }
                 }
-                
                 Spacer()
                 
+                // MARK: - Sign In Google and Apple
                 VStack(alignment: .leading, spacing: 48) {
-                    ButtonSignInAlternativeView(with: .google) {
-                        print("Sign in with Google")
-                    }
-                    ButtonSignInAlternativeView(with: .apple) {
-                        print("Sign in with Apple")
-                    }
+                    ButtonSignInAlternativeView(with: .google) { }
+                    ButtonSignInAlternativeView(with: .apple) { }
                 }
-                
                 Spacer()
             }
             .padding(.horizontal, 44)
-            
-            
-            
         }
         .alert(isPresented: $demoProfileViewModel.showAlert) {
             Alert(title: Text(demoProfileViewModel.titleAlert),
