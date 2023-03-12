@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct DemoProfileApp: App {
     
-    @StateObject var demoProfileViewModel = DemoProfileViewModel()
+    @StateObject var demoProfileViewModel = SignInViewModel()
     
     var body: some Scene {
         WindowGroup {

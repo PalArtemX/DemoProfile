@@ -9,8 +9,13 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @EnvironmentObject var demoProfileViewModel: DemoProfileViewModel
+    private enum Field: Hashable {
+        case firstName
+        case password
+    }
     
+    @EnvironmentObject var demoProfileViewModel: SignInViewModel
+    @FocusState private var focusedField: Field?
     @State private var firstName = ""
     @State private var password = ""
     
@@ -27,16 +32,19 @@ struct LoginView: View {
                 Spacer()
                 
                 TextFieldLoginView(text: $firstName, placeholder: "First name")
-                
+                    .focused($focusedField, equals: .firstName)
                 SecureFieldLoginView(text: $password, placeholder: "Password")
+                    .focused($focusedField, equals: .password)
                 
                 Spacer()
                 Spacer()
                 
                 ButtonBlueView(title: "Login") {
-                    //demoProfileViewModel.signIn()
-                    firstName = ""
-                    password = ""
+                    if demoProfileViewModel.loginUser(firstName: firstName, password: password.lowercased()) {
+                        firstName = ""
+                        password = ""
+                        focusedField = nil
+                    }
                 }
                 
                 Spacer()
@@ -44,6 +52,10 @@ struct LoginView: View {
             }
             .padding(.horizontal, 44)
             
+        }
+        .alert(isPresented: $demoProfileViewModel.showAlert) {
+            Alert(title: Text(demoProfileViewModel.titleAlert),
+                  message: Text(demoProfileViewModel.messageAlert))
         }
         
     }
@@ -57,6 +69,6 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
-            .environmentObject(DemoProfileViewModel())
+            .environmentObject(SignInViewModel())
     }
 }

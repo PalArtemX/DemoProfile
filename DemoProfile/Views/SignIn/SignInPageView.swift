@@ -15,7 +15,7 @@ struct SignInPageView: View {
         case email
     }
     
-    @EnvironmentObject var demoProfileViewModel: DemoProfileViewModel
+    @EnvironmentObject var demoProfileViewModel: SignInViewModel
     @FocusState private var focusedField: Field?
     
     @State private var firstName = ""
@@ -45,7 +45,7 @@ struct SignInPageView: View {
                 
                 VStack(alignment: .leading, spacing: 18) {
                     ButtonBlueView(title: "Sign in") {
-                        if demoProfileViewModel.registrationUser(firstName: firstName, lastName: lastName, email: email) {
+                        if demoProfileViewModel.registrationUser(firstName: firstName, lastName: lastName, email: email.lowercased()) {
                             firstName = ""
                             lastName = ""
                             email = ""
@@ -113,6 +113,6 @@ struct SignInPageView: View {
 struct SignInPageView_Previews: PreviewProvider {
     static var previews: some View {
         SignInPageView()
-            .environmentObject(DemoProfileViewModel())
+            .environmentObject(SignInViewModel())
     }
 }

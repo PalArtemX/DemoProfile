@@ -36,7 +36,7 @@
 		F8E9C0BE29BCA741006A164A /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0BD29BCA741006A164A /* Resources.swift */; };
 		F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C129BCBF4B006A164A /* LoginView.swift */; };
 		F8E9C0C429BCC490006A164A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C329BCC490006A164A /* User.swift */; };
-		F8E9C0C629BCC4E5006A164A /* DemoProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C529BCC4E5006A164A /* DemoProfileViewModel.swift */; };
+		F8E9C0C629BCC4E5006A164A /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C529BCC4E5006A164A /* SignInViewModel.swift */; };
 		F8E9C0C829BCD79F006A164A /* SecureFieldLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C729BCD79F006A164A /* SecureFieldLoginView.swift */; };
 		F8E9C0CA29BD02DC006A164A /* String + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C0C929BD02DC006A164A /* String + ext.swift */; };
 /* End PBXBuildFile section */
@@ -73,7 +73,7 @@
 		F8E9C0BD29BCA741006A164A /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		F8E9C0C129BCBF4B006A164A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F8E9C0C329BCC490006A164A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		F8E9C0C529BCC4E5006A164A /* DemoProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProfileViewModel.swift; sourceTree = "<group>"; };
+		F8E9C0C529BCC4E5006A164A /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		F8E9C0C729BCD79F006A164A /* SecureFieldLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldLoginView.swift; sourceTree = "<group>"; };
 		F8E9C0C929BD02DC006A164A /* String + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C0AD29BC8824006A164A /* SignIn */,
-				F8E9C0C029BCBF31006A164A /* Login */,
 				F8E9C09429BB9E8B006A164A /* TabBar */,
 				F8E9C0A329BBC753006A164A /* HomeView.swift */,
 				F8E9C0A529BBC7C8006A164A /* LikeView.swift */,
@@ -154,7 +153,7 @@
 		F8E9C05A29BB6D37006A164A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F8E9C0C529BCC4E5006A164A /* DemoProfileViewModel.swift */,
+				F8E9C0C529BCC4E5006A164A /* SignInViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -213,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C0AE29BC88AB006A164A /* SignInPageView.swift */,
+				F8E9C0C129BCBF4B006A164A /* LoginView.swift */,
 				F8E9C0BA29BCA49C006A164A /* Components */,
 			);
 			path = SignIn;
@@ -239,14 +239,6 @@
 				F8E9C09B29BBB3B9006A164A /* TabBarItemsPreferenceKey.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		F8E9C0C029BCBF31006A164A /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				F8E9C0C129BCBF4B006A164A /* LoginView.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,7 +340,7 @@
 				F8E9C09C29BBB3B9006A164A /* TabBarItemsPreferenceKey.swift in Sources */,
 				F8E9C0AF29BC88AB006A164A /* SignInPageView.swift in Sources */,
 				F8E9C0C429BCC490006A164A /* User.swift in Sources */,
-				F8E9C0C629BCC4E5006A164A /* DemoProfileViewModel.swift in Sources */,
+				F8E9C0C629BCC4E5006A164A /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

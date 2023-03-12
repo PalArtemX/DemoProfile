@@ -1,5 +1,5 @@
 //
-//  DemoProfileViewModel.swift
+//  SignInViewModel.swift
 //  DemoProfile
 //
 //  Created by Artem Paliutin on 11/03/2023.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-final class DemoProfileViewModel: ObservableObject {
+final class SignInViewModel: ObservableObject {
     
     @Published private(set) var userLoggedIn = false
     @Published private(set) var messageAlert = ""
@@ -32,7 +32,53 @@ final class DemoProfileViewModel: ObservableObject {
 
 
 // MARK: - user registration
-extension DemoProfileViewModel {
+extension SignInViewModel {
+    // Since there is no password input in the user interface during registration, registration and user login are implemented with stubs
+    
+    func loginUser(firstName: String, password: String) -> Bool {
+        let user = User(firstName: firstName, lastName: "Name", email: "email@email.com", password: "pass")
+        print(">>>>>>> \(user)")
+        
+        if users.contains(user) {
+            print("contains >> \(users)")
+            signIn()
+            return true
+        } else {
+            titleAlert = "Such a user is not registered"
+            messageAlert = "Such a user is not registered, check the correctness of the login and password"
+            showAlert = true
+            return false
+        }
+    }
+    
+    private func signIn() {
+        userLoggedIn = true
+    }
+    
+    private func signOut() {
+        userLoggedIn = false
+    }
+    
+    func registrationUser(firstName: String, lastName: String, email: String) -> Bool {
+        let user = User(firstName: firstName, lastName: lastName, email: email, password: "pass")
+        
+        guard userNameValidSignIn(name: user) else { return false }
+        
+        if users.contains(user) {
+            titleAlert = "The user is already registered"
+            messageAlert = "The user is already registered, log in with your username"
+            showAlert = true
+            print("+++++++")
+            print("+++++++ \(users)")
+            return false
+        } else {
+            print("-------")
+            print("------- \(users)")
+            users.append(user)
+            signIn()
+            return true
+        }
+    }
     
     private func putUsers() {
         if let data = try? JSONEncoder().encode(users) {
@@ -46,10 +92,6 @@ extension DemoProfileViewModel {
                 self.users = users
             }
         }
-    }
-    
-    private func signIn() {
-        userLoggedIn = true
     }
     
     private func userNameValidSignIn(name: User) -> Bool {
@@ -77,23 +119,6 @@ extension DemoProfileViewModel {
             return true
         }
         
-    }
-    
-    func registrationUser(firstName: String, lastName: String, email: String) -> Bool {
-        let user = User(firstName: firstName, lastName: lastName, email: email, password: "")
-        
-        guard userNameValidSignIn(name: user) else { return false }
-        
-        if users.contains(user) {
-            messageAlert = "The user is already registered"
-            print("+++++++")
-            return false
-        } else {
-            print("-------")
-            users.append(user)
-            signIn()
-            return true
-        }
     }
     
 }
