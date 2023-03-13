@@ -32,7 +32,7 @@ enum Resources {
         }
     }
     
-    enum Profile {
+    enum ProfileIcon {
         case card, help, logOut, restore
         
         var name: String {
@@ -45,6 +45,27 @@ enum Resources {
                 return "logOut"
             case .restore:
                 return "restore"
+            }
+        }
+    }
+    
+    enum HomeIcon {
+        case phones, headPhones, games, cars, furniture, kids
+        
+        var name: String {
+            switch self {
+            case .phones:
+                return "phones"
+            case .headPhones:
+                return "headPhones"
+            case .games:
+                return "games"
+            case .cars:
+                return "cars"
+            case .furniture:
+                return "furniture"
+            case .kids:
+                return "kids"
             }
         }
     }

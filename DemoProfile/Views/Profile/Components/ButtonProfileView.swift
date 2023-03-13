@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ButtonProfileView: View {
     let title: String
-    let icon: Resources.Profile
+    let icon: Resources.ProfileIcon
     let price: String?
     let action: () -> ()
     

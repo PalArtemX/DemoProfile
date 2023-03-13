@@ -22,6 +22,7 @@ struct ColorTheme {
     let foregroundColorButton = Color("foregroundColorButton")
     let profileSecondary = Color("profileSecondary")
     let profileUserName = Color("profileUserName")
+    let homeSecondaryIcon = Color("homeSecondaryIcon")
 }
 
 

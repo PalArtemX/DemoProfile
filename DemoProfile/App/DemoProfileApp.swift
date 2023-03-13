@@ -12,6 +12,7 @@ struct DemoProfileApp: App {
     
     @StateObject var signInViewModel = SignInViewModel()
     @StateObject var profileViewModel = ProfileViewModel()
+    @StateObject var homeViewModel = HomeViewModel()
     
     var body: some Scene {
         WindowGroup {
@@ -19,6 +20,7 @@ struct DemoProfileApp: App {
                 MainTabBarView()
                     .environmentObject(signInViewModel)
                     .environmentObject(profileViewModel)
+                    .environmentObject(homeViewModel)
             } else {
                 SignInPageView()
                     .environmentObject(signInViewModel)
