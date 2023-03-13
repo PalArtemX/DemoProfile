@@ -15,7 +15,7 @@ struct SignInPageView: View {
         case email
     }
     
-    @EnvironmentObject var demoProfileViewModel: SignInViewModel
+    @EnvironmentObject var signInViewModel: SignInViewModel
     @FocusState private var focusedField: Field?
     
     @State private var firstName = ""
@@ -47,7 +47,7 @@ struct SignInPageView: View {
                 // MARK: - Button Sign in
                 VStack(alignment: .leading, spacing: 18) {
                     ButtonBlueView(title: "Sign in") {
-                        if demoProfileViewModel.registrationUser(firstName: firstName, lastName: lastName, email: email.lowercased()) {
+                        if signInViewModel.registrationUser(firstName: firstName, lastName: lastName, email: email.lowercased()) {
                             firstName = ""
                             lastName = ""
                             email = ""
@@ -69,9 +69,9 @@ struct SignInPageView: View {
             }
             .padding(.horizontal, 44)
         }
-        .alert(isPresented: $demoProfileViewModel.showAlert) {
-            Alert(title: Text(demoProfileViewModel.titleAlert),
-                  message: Text(demoProfileViewModel.messageAlert))
+        .alert(isPresented: $signInViewModel.showAlert) {
+            Alert(title: Text(signInViewModel.titleAlert),
+                  message: Text(signInViewModel.messageAlert))
         }
         .sheet(isPresented: $isShowLoginView) {
             LoginView()

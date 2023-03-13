@@ -14,7 +14,7 @@ struct LoginView: View {
         case password
     }
     
-    @EnvironmentObject var demoProfileViewModel: SignInViewModel
+    @EnvironmentObject var signInViewModel: SignInViewModel
     @FocusState private var focusedField: Field?
     @State private var firstName = ""
     @State private var password = ""
@@ -43,7 +43,7 @@ struct LoginView: View {
                 
                 // MARK: - Button Login
                 ButtonBlueView(title: "Login") {
-                    if demoProfileViewModel.loginUser(firstName: firstName, password: password.lowercased()) {
+                    if signInViewModel.loginUser(firstName: firstName, password: password.lowercased()) {
                         firstName = ""
                         password = ""
                         focusedField = nil
@@ -56,9 +56,9 @@ struct LoginView: View {
             .padding(.horizontal, 44)
             
         }
-        .alert(isPresented: $demoProfileViewModel.showAlert) {
-            Alert(title: Text(demoProfileViewModel.titleAlert),
-                  message: Text(demoProfileViewModel.messageAlert))
+        .alert(isPresented: $signInViewModel.showAlert) {
+            Alert(title: Text(signInViewModel.titleAlert),
+                  message: Text(signInViewModel.messageAlert))
         }
         
     }

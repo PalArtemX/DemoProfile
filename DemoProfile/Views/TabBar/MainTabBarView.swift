@@ -25,7 +25,7 @@ struct MainTabBarView: View {
             MessageView()
                 .tabBarItem(tab: .message, selection: $selector)
             
-            AccountView()
+            ProfileView()
                 .tabBarItem(tab: .account, selection: $selector)
         }
         .ignoresSafeArea()
@@ -38,5 +38,7 @@ struct MainTabBarView: View {
 struct MainTabBarView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabBarView()
+            .environmentObject(SignInViewModel())
+            .environmentObject(ProfileViewModel())
     }
 }

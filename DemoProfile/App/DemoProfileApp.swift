@@ -10,16 +10,18 @@ import SwiftUI
 @main
 struct DemoProfileApp: App {
     
-    @StateObject var demoProfileViewModel = SignInViewModel()
+    @StateObject var signInViewModel = SignInViewModel()
+    @StateObject var profileViewModel = ProfileViewModel()
     
     var body: some Scene {
         WindowGroup {
-            if demoProfileViewModel.userLoggedIn {
+            if signInViewModel.userLoggedIn {
                 MainTabBarView()
-                    .environmentObject(demoProfileViewModel)
+                    .environmentObject(signInViewModel)
+                    .environmentObject(profileViewModel)
             } else {
                 SignInPageView()
-                    .environmentObject(demoProfileViewModel)
+                    .environmentObject(signInViewModel)
             }
         }
     }

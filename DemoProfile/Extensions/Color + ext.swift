@@ -10,7 +10,7 @@ import SwiftUI
 struct ColorTheme {
     
     let background = Color("background")
-    let backgroundIconTabBar = Color("backgroundIconTabBar")
+    let backgroundIcon = Color("backgroundIcon")
     let backgroundLoginTextField = Color("backgroundLoginTextField")
     let backgroundSearch = Color("backgroundSearch")
     let blue = Color("blue")
@@ -20,6 +20,8 @@ struct ColorTheme {
     let text = Color("text")
     let textSecondary = Color("textSecondary")
     let foregroundColorButton = Color("foregroundColorButton")
+    let profileSecondary = Color("profileSecondary")
+    let profileUserName = Color("profileUserName")
 }
 
 

@@ -30,7 +30,23 @@ enum Resources {
                 return "Google"
             }
         }
+    }
+    
+    enum Profile {
+        case card, help, logOut, restore
         
+        var name: String {
+            switch self {
+            case .card:
+                return "card"
+            case .help:
+                return "help"
+            case .logOut:
+                return "logOut"
+            case .restore:
+                return "restore"
+            }
+        }
     }
     
 }

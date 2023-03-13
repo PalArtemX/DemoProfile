@@ -10,7 +10,7 @@ import SwiftUI
 
 final class SignInViewModel: ObservableObject {
     
-    @Published private(set) var userLoggedIn = false
+    @AppStorage("userLoggedIn") private(set) var userLoggedIn = false
     @Published private(set) var messageAlert = ""
     @Published private(set) var titleAlert = ""
     @Published var showAlert = false
@@ -48,6 +48,10 @@ extension SignInViewModel {
         }
     }
     
+    func logOut() {
+        userLoggedIn = false
+    }
+    
     func registrationUser(firstName: String, lastName: String, email: String) -> Bool {
         let user = User(firstName: firstName, lastName: lastName, email: email, password: "pass")
         
@@ -67,10 +71,6 @@ extension SignInViewModel {
     
     private func signIn() {
         userLoggedIn = true
-    }
-    
-    private func signOut() {
-        userLoggedIn = false
     }
     
     private func putUsers() {

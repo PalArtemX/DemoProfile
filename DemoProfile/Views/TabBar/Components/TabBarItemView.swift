@@ -56,7 +56,7 @@ extension TabBarItemView {
             .background(
                 ZStack {
                     if selector == tab {
-                        Color.colorTheme.backgroundIconTabBar.clipShape(Circle())
+                        Color.colorTheme.backgroundIcon.clipShape(Circle())
                             .matchedGeometryEffect(id: matchedGeometryEffectId, in: namespace)
                     }
                 }
