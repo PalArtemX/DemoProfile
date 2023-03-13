@@ -48,6 +48,13 @@
 		F8EA886D29BF4BF700D0471E /* IconCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA886C29BF4BF700D0471E /* IconCarouselHomeView.swift */; };
 		F8EA886F29BF4E9D00D0471E /* TitleNavBarHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA886E29BF4E9D00D0471E /* TitleNavBarHomeView.swift */; };
 		F8EA887329BF510F00D0471E /* PhotoNavBarHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA887229BF510F00D0471E /* PhotoNavBarHomeView.swift */; };
+		F8EA887529BF619200D0471E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA887429BF619200D0471E /* SearchView.swift */; };
+		F8EA887729BF6A6E00D0471E /* HeaderCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA887629BF6A6E00D0471E /* HeaderCarouselView.swift */; };
+		F8EA887929BF6D5600D0471E /* Latest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA887829BF6D5600D0471E /* Latest.swift */; };
+		F8EA887B29BF6EEE00D0471E /* LatestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA887A29BF6EEE00D0471E /* LatestView.swift */; };
+		F8EA887D29BF72E100D0471E /* LoadImageForBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA887C29BF72E100D0471E /* LoadImageForBannerView.swift */; };
+		F8EA887F29BF745E00D0471E /* ButtonForBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA887E29BF745E00D0471E /* ButtonForBannerView.swift */; };
+		F8EA888129BF769900D0471E /* CategoryForBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA888029BF769900D0471E /* CategoryForBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +101,13 @@
 		F8EA886C29BF4BF700D0471E /* IconCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCarouselHomeView.swift; sourceTree = "<group>"; };
 		F8EA886E29BF4E9D00D0471E /* TitleNavBarHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNavBarHomeView.swift; sourceTree = "<group>"; };
 		F8EA887229BF510F00D0471E /* PhotoNavBarHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoNavBarHomeView.swift; sourceTree = "<group>"; };
+		F8EA887429BF619200D0471E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		F8EA887629BF6A6E00D0471E /* HeaderCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCarouselView.swift; sourceTree = "<group>"; };
+		F8EA887829BF6D5600D0471E /* Latest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latest.swift; sourceTree = "<group>"; };
+		F8EA887A29BF6EEE00D0471E /* LatestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestView.swift; sourceTree = "<group>"; };
+		F8EA887C29BF72E100D0471E /* LoadImageForBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageForBannerView.swift; sourceTree = "<group>"; };
+		F8EA887E29BF745E00D0471E /* ButtonForBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForBannerView.swift; sourceTree = "<group>"; };
+		F8EA888029BF769900D0471E /* CategoryForBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryForBannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C0C329BCC490006A164A /* User.swift */,
+				F8EA887829BF6D5600D0471E /* Latest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +335,12 @@
 				F8EA886829BF471700D0471E /* IconHomeView.swift */,
 				F8EA886E29BF4E9D00D0471E /* TitleNavBarHomeView.swift */,
 				F8EA887229BF510F00D0471E /* PhotoNavBarHomeView.swift */,
+				F8EA887429BF619200D0471E /* SearchView.swift */,
+				F8EA887629BF6A6E00D0471E /* HeaderCarouselView.swift */,
+				F8EA887A29BF6EEE00D0471E /* LatestView.swift */,
+				F8EA887C29BF72E100D0471E /* LoadImageForBannerView.swift */,
+				F8EA887E29BF745E00D0471E /* ButtonForBannerView.swift */,
+				F8EA888029BF769900D0471E /* CategoryForBannerView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -406,10 +427,12 @@
 				F8E9C0A829BBC7F8006A164A /* BasketView.swift in Sources */,
 				F8E9C09829BBAFC3006A164A /* TabBarView.swift in Sources */,
 				F8E9C0B729BCA091006A164A /* AlreadyHaveAnAccountView .swift in Sources */,
+				F8EA888129BF769900D0471E /* CategoryForBannerView.swift in Sources */,
 				F8090E5929BF1C25000A45E9 /* ButtonChangePhotoView.swift in Sources */,
 				F8E9C0B329BC8942006A164A /* TextFieldLoginView.swift in Sources */,
 				F8E9C04B29BB691F006A164A /* DemoProfileApp.swift in Sources */,
 				F8E9C0CA29BD02DC006A164A /* String + ext.swift in Sources */,
+				F8EA887729BF6A6E00D0471E /* HeaderCarouselView.swift in Sources */,
 				F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */,
 				F8EA886929BF471700D0471E /* IconHomeView.swift in Sources */,
 				F8E9C09A29BBB25D006A164A /* MainTabBarView.swift in Sources */,
@@ -425,14 +448,19 @@
 				F8E9C0AC29BBC831006A164A /* ProfileView.swift in Sources */,
 				F8E9C0A429BBC753006A164A /* HomeView.swift in Sources */,
 				F8E9C0A629BBC7C8006A164A /* LikeView.swift in Sources */,
+				F8EA887D29BF72E100D0471E /* LoadImageForBannerView.swift in Sources */,
 				F8E9C08F29BB95F1006A164A /* Image + ext.swift in Sources */,
+				F8EA887529BF619200D0471E /* SearchView.swift in Sources */,
 				F8E9C0AA29BBC81A006A164A /* MessageView.swift in Sources */,
 				F8EA886F29BF4E9D00D0471E /* TitleNavBarHomeView.swift in Sources */,
+				F8EA887929BF6D5600D0471E /* Latest.swift in Sources */,
 				F8E9C09C29BBB3B9006A164A /* TabBarItemsPreferenceKey.swift in Sources */,
 				F8E9C0AF29BC88AB006A164A /* SignInPageView.swift in Sources */,
 				F8E9C0C429BCC490006A164A /* User.swift in Sources */,
 				F8EA886D29BF4BF700D0471E /* IconCarouselHomeView.swift in Sources */,
+				F8EA887F29BF745E00D0471E /* ButtonForBannerView.swift in Sources */,
 				F8E9C0C629BCC4E5006A164A /* SignInViewModel.swift in Sources */,
+				F8EA887B29BF6EEE00D0471E /* LatestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

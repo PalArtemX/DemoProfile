@@ -10,6 +10,13 @@ import SwiftUI
 final class HomeViewModel: ObservableObject {
     
     @Published private(set) var icons: [Resources.HomeIcon] = [.phones, .headPhones, .games, .cars, .furniture, .kids]
+    @Published private(set) var latest: [Latest] = []
+    
+}
+
+extension HomeViewModel {
+    
     
     
 }
+

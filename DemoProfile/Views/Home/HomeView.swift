@@ -15,9 +15,20 @@ struct HomeView: View {
                 
                 ScrollView {
                     VStack {
+                        // MARK: - Search
+                        SearchView()
+                            .padding(.horizontal, 50)
                         
-                        // MARK: - Icon Carousel Home View
+                        // MARK: - Icon Carousel
                         IconCarouselHomeView()
+                            .padding(.bottom)
+                        
+                        // MARK: - Latest Carousel
+                        HeaderCarouselView(title: "Latest") {}
+                            .padding(.horizontal)
+                        
+                        
+                        
                     }
                     .toolbar {
                         ToolbarItem(placement: .principal) {

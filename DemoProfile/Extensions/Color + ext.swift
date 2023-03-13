@@ -13,16 +13,25 @@ struct ColorTheme {
     let backgroundIcon = Color("backgroundIcon")
     let backgroundLoginTextField = Color("backgroundLoginTextField")
     let backgroundSearch = Color("backgroundSearch")
+    
     let blue = Color("blue")
+    
     let iconLike = Color("iconLike")
     let iconTabBarActive = Color("iconTabBarActive")
     let iconTabBarInactive = Color("iconTabBarInactive")
+    
     let text = Color("text")
     let textSecondary = Color("textSecondary")
+    
     let foregroundColorButton = Color("foregroundColorButton")
+    let foregroundLatestButton = Color("foregroundLatestButton")
+    
     let profileSecondary = Color("profileSecondary")
     let profileUserName = Color("profileUserName")
+    
     let homeSecondaryIcon = Color("homeSecondaryIcon")
+    let homeSecondary = Color("homeSecondary")
+    
 }
 
 

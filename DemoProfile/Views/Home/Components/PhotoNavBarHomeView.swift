@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct PhotoNavBarHomeView: View {
+    
     @EnvironmentObject var profileViewModel: ProfileViewModel
+    private let sizeImage: CGFloat = 30
     
     var body: some View {
         VStack {
@@ -16,26 +18,26 @@ struct PhotoNavBarHomeView: View {
                 image
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 30, height: 30)
+                    .frame(width: sizeImage, height: sizeImage)
                     .clipShape(Circle())
-                    .background(
+                    .overlay {
                         Circle()
-                            .frame(width: 32, height: 322)
-                            .foregroundColor(.colorTheme.profileSecondary)
-                    )
+                            .stroke(lineWidth: 1)
+                            .foregroundColor(.colorTheme.homeSecondary)
+                    }
             } else {
                 Image(systemName: "person")
                     .resizable()
                     .scaledToFit()
                     .foregroundColor(.colorTheme.iconTabBarActive)
                     .padding()
-                    .frame(width: 30, height: 30)
+                    .frame(width: sizeImage, height: sizeImage)
                     .clipShape(Circle())
-                    .background(
+                    .overlay {
                         Circle()
-                            .frame(width: 32, height: 32)
-                            .foregroundColor(.colorTheme.profileSecondary)
-                    )
+                            .stroke(lineWidth: 1)
+                            .foregroundColor(.colorTheme.homeSecondary)
+                    }
     
             }
             
@@ -44,7 +46,7 @@ struct PhotoNavBarHomeView: View {
             } label: {
                 HStack {
                     Text("Location")
-                        .foregroundColor(.colorTheme.homeSecondaryIcon)
+                        .foregroundColor(.colorTheme.homeSecondary)
                     Image(systemName: "chevron.down")
                         .foregroundColor(.colorTheme.text)
                 }
