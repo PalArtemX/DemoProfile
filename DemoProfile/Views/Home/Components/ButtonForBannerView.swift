@@ -12,14 +12,15 @@ struct ButtonForBannerView: View {
     let systemName: String
     let size: CGFloat
     let fontSize: CGFloat
+    let weightFont: FontMontserrat.Weight
     let action: () -> ()
     
     var body: some View {
         Button {
             action()
         } label: {
-            Image(systemName: "plus")
-                .fontMontserrat(weight: .semibold, size: fontSize)
+            Image(systemName: systemName)
+                .fontMontserrat(weight: weightFont, size: fontSize)
                 .foregroundColor(.colorTheme.foregroundLatestButton)
                 .background(
                     Color.colorTheme.backgroundIcon.opacity(0.9)
@@ -39,6 +40,6 @@ struct ButtonForBannerView: View {
 
 struct ButtonForLatestView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonForBannerView(systemName: "plus", size: 44, fontSize: 16, action: {})
+        ButtonForBannerView(systemName: "plus", size: 44, fontSize: 16, weightFont: .semibold, action: {})
     }
 }

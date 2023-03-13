@@ -35,7 +35,7 @@ struct SearchView: View {
 
             }
             .frame(height: 33)
-            .fontMontserrat(weight: .medium, size: 14)
+            .fontMontserrat(weight: .medium, size: 12)
             .foregroundColor(.colorTheme.text)
             .background(
                 Color.colorTheme.backgroundSearch
@@ -46,7 +46,7 @@ struct SearchView: View {
             if search.isEmpty {
                 Text("What are you looking for ?")
                     .foregroundColor(.colorTheme.homeSecondary.opacity(0.9))
-                    .fontMontserrat(weight: .medium, size: 12)
+                    .fontMontserrat(weight: .regular, size: 12)
                     .onTapGesture {
                         focusedField = .search
                     }

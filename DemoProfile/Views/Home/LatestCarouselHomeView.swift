@@ -1,5 +1,5 @@
 //
-//  IconCarouselHomeView.swift
+//  LatestCarouselHomeView.swift
 //  DemoProfile
 //
 //  Created by Artem Paliutin on 13/03/2023.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct IconCarouselHomeView: View {
+struct LatestCarouselHomeView: View {
     
     @EnvironmentObject var homeViewModel: HomeViewModel
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 34.0) {
-                ForEach(homeViewModel.icons, id: \.self) { item in
-                    IconHomeView(item: item)
+            LazyHStack(spacing: 12) {
+                ForEach(homeViewModel.latests) { latest in
+                    LatestView(latest: latest)
                 }
             }
             .padding()
@@ -26,9 +26,9 @@ struct IconCarouselHomeView: View {
 
 
 
-struct IconCarouselHomeView_Previews: PreviewProvider {
+struct LatestCarouselHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        IconCarouselHomeView()
+        LatestCarouselHomeView()
             .environmentObject(HomeViewModel())
     }
 }

@@ -25,20 +25,21 @@ struct LatestView: View {
                     
                     Text(latest.name)
                         .foregroundColor(.white)
-                        .fontMontserrat(weight: .semibold, size: 9)
+                        .fontMontserrat(weight: .bold, size: 9)
                         .padding(.bottom)
+                        .shadow(radius: 2)
                     
                     Text("$ \(latest.price)")
                         .foregroundColor(.white)
-                        .fontMontserrat(weight: .semibold, size: 9)
-                    
+                        .fontMontserrat(weight: .bold, size: 7)
+                        .shadow(radius: 2)
                 }
                 .padding(6)
                 Spacer()
                 
                 VStack {
                     Spacer()
-                    ButtonForBannerView(systemName: "plus", size: 24, fontSize: 15) {}
+                    ButtonForBannerView(systemName: "plus", size: 24, fontSize: 14, weightFont: .regular) {}
                         .padding(9)
                 }
             }
@@ -58,7 +59,7 @@ struct LatestView_Previews: PreviewProvider {
         ZStack {
             Color.colorTheme.background.ignoresSafeArea()
             
-            LatestView(latest: Latest(category: "phone", name: "Samsung", price: 1002, imageURL: "https://mirbmw.ru/wp-content/uploads/2022/01/manhart-mhx6-700-01.jpg"))
+            LatestView(latest: Latest(category: "phone", name: "Samsung", price: 145, imageURL: "https://mirbmw.ru/wp-content/uploads/2022/01/manhart-mhx6-700-01.jpg"))
         }
     }
 }

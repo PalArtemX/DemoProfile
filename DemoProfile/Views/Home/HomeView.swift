@@ -14,7 +14,7 @@ struct HomeView: View {
                 Color.colorTheme.background.ignoresSafeArea()
                 
                 ScrollView {
-                    VStack {
+                    VStack(spacing: 0.0) {
                         // MARK: - Search
                         SearchView()
                             .padding(.horizontal, 50)
@@ -26,9 +26,17 @@ struct HomeView: View {
                         // MARK: - Latest Carousel
                         HeaderCarouselView(title: "Latest") {}
                             .padding(.horizontal)
+                            .padding(.top)
+                        LatestCarouselHomeView()
+                            .padding(.bottom)
                         
+                        // MARK: - Flash Sale
+                        HeaderCarouselView(title: "Flash Sale") {}
+                            .padding(.horizontal)
+                            .padding(.top)
                         
-                        
+                        FlashCarouselHomeView()
+                            .padding(.bottom)
                     }
                     .toolbar {
                         ToolbarItem(placement: .principal) {
