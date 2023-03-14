@@ -13,7 +13,7 @@ struct MessageView: View {
             Color.colorTheme.background.ignoresSafeArea()
             
             Text("Message View")
-                .fontMontserrat(weight: .bold, size: 18)
+                .fontMontserrat(weight: .medium, size: 24)
                 .foregroundColor(.colorTheme.text)
         }
     }

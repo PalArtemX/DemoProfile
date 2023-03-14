@@ -61,6 +61,9 @@
 		F8EA888929BFCD8500D0471E /* SaleOffForBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA888829BFCD8500D0471E /* SaleOffForBannerView.swift */; };
 		F8EA888B29BFCF4300D0471E /* ImageForBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA888A29BFCF4300D0471E /* ImageForBannerView.swift */; };
 		F8EA888D29BFD00300D0471E /* FlashCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA888C29BFD00300D0471E /* FlashCarouselHomeView.swift */; };
+		F8EA888F29C0783D00D0471E /* BrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA888E29C0783D00D0471E /* BrandView.swift */; };
+		F8EA889129C07A0500D0471E /* BrandCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA889029C07A0500D0471E /* BrandCarouselHomeView.swift */; };
+		F8EA889329C07B5500D0471E /* PreviewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA889229C07B5500D0471E /* PreviewContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +123,9 @@
 		F8EA888829BFCD8500D0471E /* SaleOffForBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleOffForBannerView.swift; sourceTree = "<group>"; };
 		F8EA888A29BFCF4300D0471E /* ImageForBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageForBannerView.swift; sourceTree = "<group>"; };
 		F8EA888C29BFD00300D0471E /* FlashCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCarouselHomeView.swift; sourceTree = "<group>"; };
+		F8EA888E29C0783D00D0471E /* BrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandView.swift; sourceTree = "<group>"; };
+		F8EA889029C07A0500D0471E /* BrandCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCarouselHomeView.swift; sourceTree = "<group>"; };
+		F8EA889229C07B5500D0471E /* PreviewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C05129BB691F006A164A /* Preview Assets.xcassets */,
+				F8EA889229C07B5500D0471E /* PreviewContent.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -315,8 +322,10 @@
 				F8EA886C29BF4BF700D0471E /* IconCarouselHomeView.swift */,
 				F8EA888229BF822000D0471E /* LatestCarouselHomeView.swift */,
 				F8EA888C29BFD00300D0471E /* FlashCarouselHomeView.swift */,
+				F8EA889029C07A0500D0471E /* BrandCarouselHomeView.swift */,
 				F8EA887A29BF6EEE00D0471E /* LatestView.swift */,
 				F8EA888629BFC4EB00D0471E /* FlashSaleView.swift */,
+				F8EA888E29C0783D00D0471E /* BrandView.swift */,
 				F8EA886629BF3D3B00D0471E /* Components */,
 			);
 			path = Home;
@@ -452,12 +461,14 @@
 				F8E9C04B29BB691F006A164A /* DemoProfileApp.swift in Sources */,
 				F8E9C0CA29BD02DC006A164A /* String + ext.swift in Sources */,
 				F8EA888929BFCD8500D0471E /* SaleOffForBannerView.swift in Sources */,
+				F8EA889129C07A0500D0471E /* BrandCarouselHomeView.swift in Sources */,
 				F8EA887729BF6A6E00D0471E /* HeaderCarouselView.swift in Sources */,
 				F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */,
 				F8EA886929BF471700D0471E /* IconHomeView.swift in Sources */,
 				F8EA888B29BFCF4300D0471E /* ImageForBannerView.swift in Sources */,
 				F8E9C09A29BBB25D006A164A /* MainTabBarView.swift in Sources */,
 				F8EA888529BFC49A00D0471E /* FlashSale.swift in Sources */,
+				F8EA888F29C0783D00D0471E /* BrandView.swift in Sources */,
 				F8E9C0BE29BCA741006A164A /* Resources.swift in Sources */,
 				F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */,
 				F8E9C0C829BCD79F006A164A /* SecureFieldLoginView.swift in Sources */,
@@ -467,6 +478,7 @@
 				F8EA888329BF822000D0471E /* LatestCarouselHomeView.swift in Sources */,
 				F8E9C0B529BC9970006A164A /* ButtonBlueView.swift in Sources */,
 				F8E9C09629BB9EB5006A164A /* TabBarItem.swift in Sources */,
+				F8EA889329C07B5500D0471E /* PreviewContent.swift in Sources */,
 				F8090E5329BE553A000A45E9 /* ButtonProfileView.swift in Sources */,
 				F8E9C0AC29BBC831006A164A /* ProfileView.swift in Sources */,
 				F8E9C0A429BBC753006A164A /* HomeView.swift in Sources */,

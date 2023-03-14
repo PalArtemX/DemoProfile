@@ -37,6 +37,14 @@ struct HomeView: View {
                         
                         FlashCarouselHomeView()
                             .padding(.bottom)
+                        
+                        // MARK: - Brands
+                        HeaderCarouselView(title: "Brands") {}
+                            .padding(.horizontal)
+                            .padding(.top)
+                        
+                        BrandCarouselHomeView()
+                            .padding(.bottom)
                     }
                     .toolbar {
                         ToolbarItem(placement: .principal) {
@@ -54,14 +62,10 @@ struct HomeView: View {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             PhotoNavBarHomeView()
                         }
-                        
                     }
                 }
-                
-                
             }
         }
-        
     }
 }
 

@@ -59,7 +59,7 @@ struct LatestView_Previews: PreviewProvider {
         ZStack {
             Color.colorTheme.background.ignoresSafeArea()
             
-            LatestView(latest: Latest(category: "phone", name: "Samsung", price: 145, imageURL: "https://mirbmw.ru/wp-content/uploads/2022/01/manhart-mhx6-700-01.jpg"))
+            LatestView(latest: PreviewContent.latest)
         }
     }
 }

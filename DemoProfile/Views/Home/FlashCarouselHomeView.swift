@@ -13,7 +13,7 @@ struct FlashCarouselHomeView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 12) {
-                ForEach(homeViewModel.FlashSales) { flashSale in
+                ForEach(homeViewModel.flashSales) { flashSale in
                     FlashSaleView(flashSale: flashSale)
                 }
             }

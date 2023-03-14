@@ -40,6 +40,10 @@ struct ButtonForBannerView: View {
 
 struct ButtonForLatestView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonForBannerView(systemName: "plus", size: 44, fontSize: 16, weightFont: .semibold, action: {})
+        ButtonForBannerView(systemName: "plus",
+                            size: 44,
+                            fontSize: 16,
+                            weightFont: .semibold,
+                            action: {})
     }
 }

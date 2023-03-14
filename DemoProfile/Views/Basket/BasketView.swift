@@ -13,7 +13,7 @@ struct BasketView: View {
             Color.colorTheme.background.ignoresSafeArea()
             
             Text("Basket View")
-                .fontMontserrat(weight: .semibold, size: 30)
+                .fontMontserrat(weight: .medium, size: 24)
                 .foregroundColor(.colorTheme.text)
         }
     }

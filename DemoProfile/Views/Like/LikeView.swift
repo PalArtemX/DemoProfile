@@ -13,7 +13,7 @@ struct LikeView: View {
             Color.colorTheme.background.ignoresSafeArea()
             
             Text("Like View")
-                .fontMontserrat(weight: .semibold, size: 20)
+                .fontMontserrat(weight: .medium, size: 24)
                 .foregroundColor(.colorTheme.text)
         }
     }

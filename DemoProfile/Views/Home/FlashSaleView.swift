@@ -14,15 +14,16 @@ struct FlashSaleView: View {
     
     var body: some View {
         ZStack {
-            
+
             LoadImageForBannerView(imageURL: flashSale.imageURL, width: width, height: height)
             
             HStack {
                 
                 VStack(alignment: .leading) {
-                    
                     ImageForBannerView()
+                    
                     Spacer()
+                    
                     CategoryForBannerView(title: flashSale.category)
                     
                     Text(flashSale.name)
@@ -35,7 +36,6 @@ struct FlashSaleView: View {
                         .foregroundColor(.white)
                         .fontMontserrat(weight: .bold, size: 10)
                         .shadow(radius: 2)
-                    
                 }
                 .padding(6)
                 Spacer()
@@ -43,9 +43,8 @@ struct FlashSaleView: View {
                 VStack {
                     SaleOffForBannerView(discount: flashSale.discount)
                         .padding(.top, 10)
-                    
+        
                     Spacer()
-                    
                     
                     HStack(spacing: 18) {
                         ButtonForBannerView(systemName: "heart", size: 27, fontSize: 12, weightFont: .bold) {}
@@ -54,8 +53,6 @@ struct FlashSaleView: View {
                     .padding(10)
                 }
             }
-            
-            
         }
         .frame(width: width, height: height)
     }
@@ -69,7 +66,7 @@ struct FlashSaleView_Previews: PreviewProvider {
         ZStack {
             Color.colorTheme.blue.ignoresSafeArea()
             
-            FlashSaleView(flashSale: FlashSale(category: "Phone", name: "Samsung Plus", price: 46, discount: 30, imageURL: "https://newbalance.ru/upload/iblock/697/iz997hht_nb_02_i.jpg"))
+            FlashSaleView(flashSale: PreviewContent.flashSale)
         }
     }
 }

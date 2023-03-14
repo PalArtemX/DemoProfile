@@ -48,9 +48,11 @@ struct LoadImageView_Previews: PreviewProvider {
         ZStack {
             Color.colorTheme.background.ignoresSafeArea()
             
-            LoadImageForBannerView(imageURL: "https://www.dhresource.com/0x0/f2/albu/g8/M01/9D/19/rBVaV1079WeAEW-AAARn9m_Dmh0487.jpg",
-                          width: 115,
-                          height: 150)
+            LoadImageForBannerView(
+                imageURL: "https://www.dhresource.com/0x0/f2/albu/g8/M01/9D/19/rBVaV1079WeAEW-AAARn9m_Dmh0487.jpg",
+                width: 115,
+                height: 150
+            )
         }
     }
 }
