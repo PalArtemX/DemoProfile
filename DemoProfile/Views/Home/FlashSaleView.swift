@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FlashSaleView: View {
-    let flashSale: FlashSale
+    let flashSale: FlashSaleElement
     let width: CGFloat = 170
     let height: CGFloat = 220
     

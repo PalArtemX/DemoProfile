@@ -14,8 +14,10 @@ struct LatestCarouselHomeView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 12) {
-                ForEach(homeViewModel.latests) { latest in
-                    LatestView(latest: latest)
+                if homeViewModel.allDataUploaded {
+                    ForEach(homeViewModel.latest.latests) { latest in
+                        LatestView(latest: latest)
+                    }
                 }
             }
             .padding()

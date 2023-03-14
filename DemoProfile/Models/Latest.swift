@@ -7,11 +7,19 @@
 
 import Foundation
 
-struct Latest: Codable, Identifiable {
-    let id = UUID()
+// MARK: - Latest
+struct Latest: Codable {
+    let latests: [LatestElement]
     
-    let category: String
-    let name: String
+    enum CodingKeys: String, CodingKey {
+        case latests = "latest"
+    }
+}
+
+// MARK: - LatestElement
+struct LatestElement: Codable, Identifiable {
+    let id = UUID()
+    let category, name: String
     let price: Int
     let imageURL: String
 

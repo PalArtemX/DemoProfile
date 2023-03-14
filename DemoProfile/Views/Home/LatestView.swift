@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LatestView: View {
     
-    let latest: Latest
+    let latest: LatestElement
     let width: CGFloat = 115
     let height: CGFloat = 150
     

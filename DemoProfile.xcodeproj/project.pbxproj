@@ -64,6 +64,7 @@
 		F8EA888F29C0783D00D0471E /* BrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA888E29C0783D00D0471E /* BrandView.swift */; };
 		F8EA889129C07A0500D0471E /* BrandCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA889029C07A0500D0471E /* BrandCarouselHomeView.swift */; };
 		F8EA889329C07B5500D0471E /* PreviewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA889229C07B5500D0471E /* PreviewContent.swift */; };
+		F8EA889629C08B4C00D0471E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA889529C08B4C00D0471E /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		F8EA888E29C0783D00D0471E /* BrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandView.swift; sourceTree = "<group>"; };
 		F8EA889029C07A0500D0471E /* BrandCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCarouselHomeView.swift; sourceTree = "<group>"; };
 		F8EA889229C07B5500D0471E /* PreviewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContent.swift; sourceTree = "<group>"; };
+		F8EA889529C08B4C00D0471E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				F8E9C05A29BB6D37006A164A /* ViewModels */,
 				F8E9C05C29BB6D8E006A164A /* Extensions */,
 				F8E9C05D29BB75C2006A164A /* Resources */,
+				F8EA889429C08B3000D0471E /* Managers */,
 				F8E9C08929BB78D5006A164A /* Info.plist */,
 				F8E9C05029BB691F006A164A /* Preview Content */,
 			);
@@ -372,6 +375,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		F8EA889429C08B3000D0471E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F8EA889529C08B4C00D0471E /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -462,6 +473,7 @@
 				F8E9C0CA29BD02DC006A164A /* String + ext.swift in Sources */,
 				F8EA888929BFCD8500D0471E /* SaleOffForBannerView.swift in Sources */,
 				F8EA889129C07A0500D0471E /* BrandCarouselHomeView.swift in Sources */,
+				F8EA889629C08B4C00D0471E /* NetworkManager.swift in Sources */,
 				F8EA887729BF6A6E00D0471E /* HeaderCarouselView.swift in Sources */,
 				F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */,
 				F8EA886929BF471700D0471E /* IconHomeView.swift in Sources */,

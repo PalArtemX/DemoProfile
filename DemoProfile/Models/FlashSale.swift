@@ -7,7 +7,17 @@
 
 import Foundation
 
-struct FlashSale: Codable, Identifiable {
+// MARK: - FlashSale
+struct FlashSale: Codable {
+    let flashSales: [FlashSaleElement]
+
+    enum CodingKeys: String, CodingKey {
+        case flashSales = "flash_sale"
+    }
+}
+
+// MARK: - FlashSaleElement
+struct FlashSaleElement: Codable, Identifiable {
     let id = UUID()
     let category, name: String
     let price: Double
