@@ -322,13 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C0A329BBC753006A164A /* HomeView.swift */,
-				F8EA886C29BF4BF700D0471E /* IconCarouselHomeView.swift */,
-				F8EA888229BF822000D0471E /* LatestCarouselHomeView.swift */,
-				F8EA888C29BFD00300D0471E /* FlashCarouselHomeView.swift */,
-				F8EA889029C07A0500D0471E /* BrandCarouselHomeView.swift */,
-				F8EA887A29BF6EEE00D0471E /* LatestView.swift */,
-				F8EA888629BFC4EB00D0471E /* FlashSaleView.swift */,
-				F8EA888E29C0783D00D0471E /* BrandView.swift */,
+				F8EA889929C0C05500D0471E /* Carousels */,
 				F8EA886629BF3D3B00D0471E /* Components */,
 			);
 			path = Home;
@@ -362,6 +356,9 @@
 			isa = PBXGroup;
 			children = (
 				F8EA886829BF471700D0471E /* IconHomeView.swift */,
+				F8EA887A29BF6EEE00D0471E /* LatestView.swift */,
+				F8EA888629BFC4EB00D0471E /* FlashSaleView.swift */,
+				F8EA888E29C0783D00D0471E /* BrandView.swift */,
 				F8EA886E29BF4E9D00D0471E /* TitleNavBarHomeView.swift */,
 				F8EA887229BF510F00D0471E /* PhotoNavBarHomeView.swift */,
 				F8EA887429BF619200D0471E /* SearchView.swift */,
@@ -381,6 +378,17 @@
 				F8EA889529C08B4C00D0471E /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		F8EA889929C0C05500D0471E /* Carousels */ = {
+			isa = PBXGroup;
+			children = (
+				F8EA886C29BF4BF700D0471E /* IconCarouselHomeView.swift */,
+				F8EA888229BF822000D0471E /* LatestCarouselHomeView.swift */,
+				F8EA888C29BFD00300D0471E /* FlashCarouselHomeView.swift */,
+				F8EA889029C07A0500D0471E /* BrandCarouselHomeView.swift */,
+			);
+			path = Carousels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -32,7 +32,7 @@ struct FlashSaleView: View {
                         .padding(.bottom)
                         .shadow(radius: 2)
                     
-                    Text("$ \(flashSale.price)")
+                    Text("$ \(String(format:"%.2f", flashSale.price))")
                         .foregroundColor(.white)
                         .fontMontserrat(weight: .bold, size: 10)
                         .shadow(radius: 2)
