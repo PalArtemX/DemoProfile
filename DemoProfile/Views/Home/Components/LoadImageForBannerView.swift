@@ -33,7 +33,7 @@ struct LoadImageForBannerView: View {
                     
                     ProgressView()
                 }
-        }
+            }
         }
         .frame(width: width, height: height, alignment: .center)
     }

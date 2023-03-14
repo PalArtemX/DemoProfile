@@ -39,8 +39,10 @@ struct SignInPageView: View {
                 // MARK: - TextFields
                 TextFieldLoginView(text: $firstName, placeholder: "First name")
                     .focused($focusedField, equals: .firstName)
+                
                 TextFieldLoginView(text: $lastName, placeholder: "Last name")
                     .focused($focusedField, equals: .lastName)
+                
                 TextFieldLoginView(text: $email, placeholder: "Email")
                     .focused($focusedField, equals: .email)
                 

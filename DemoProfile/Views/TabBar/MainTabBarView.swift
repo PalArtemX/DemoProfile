@@ -9,24 +9,24 @@ import SwiftUI
 
 struct MainTabBarView: View {
     
-    @State private var selector = TabBarItem.house
+    @EnvironmentObject var signInViewModel: SignInViewModel
     
     var body: some View {
-        TabBarView(selection: $selector) {
+        TabBarView(selection: $signInViewModel.tabBarTag) {
             HomeView()
-                .tabBarItem(tab: .house, selection: $selector)
+                .tabBarItem(tab: .house, selection: $signInViewModel.tabBarTag)
             
             LikeView()
-                .tabBarItem(tab: .like, selection: $selector)
+                .tabBarItem(tab: .like, selection: $signInViewModel.tabBarTag)
             
             BasketView()
-                .tabBarItem(tab: .basket, selection: $selector)
+                .tabBarItem(tab: .basket, selection: $signInViewModel.tabBarTag)
             
             MessageView()
-                .tabBarItem(tab: .message, selection: $selector)
+                .tabBarItem(tab: .message, selection: $signInViewModel.tabBarTag)
             
             ProfileView()
-                .tabBarItem(tab: .account, selection: $selector)
+                .tabBarItem(tab: .account, selection: $signInViewModel.tabBarTag)
         }
         .ignoresSafeArea()
     }

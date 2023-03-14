@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ButtonSignInAlternativeView: View {
+    
     let signIn: Resources.SignInWith
     let action: () -> ()
     

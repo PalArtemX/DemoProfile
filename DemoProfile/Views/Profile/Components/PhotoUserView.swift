@@ -38,8 +38,6 @@ struct PhotoUserView: View {
                         .foregroundColor(.colorTheme.profileSecondary)
                 }
         }
-        
-        
     }
 }
 

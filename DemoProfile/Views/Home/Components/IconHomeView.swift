@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct IconHomeView: View {
+    
     let item: Resources.HomeIcon
     
     var body: some View {

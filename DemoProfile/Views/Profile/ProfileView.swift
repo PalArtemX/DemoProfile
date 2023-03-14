@@ -55,7 +55,6 @@ struct ProfileView: View {
                         .navigationBarTitleDisplayMode(.inline)
                         Spacer()
                     }
-                    
                     .alert("Log out?", isPresented: $isShowAlert, actions: {
                         Button("Ok") {
                             signInViewModel.logOut()

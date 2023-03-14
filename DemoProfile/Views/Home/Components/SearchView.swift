@@ -32,7 +32,6 @@ struct SearchView: View {
                         .foregroundColor(.colorTheme.homeSecondary)
                 }
                 .padding()
-
             }
             .frame(height: 33)
             .fontMontserrat(weight: .medium, size: 12)

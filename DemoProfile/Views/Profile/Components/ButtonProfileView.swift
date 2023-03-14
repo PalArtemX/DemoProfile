@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ButtonProfileView: View {
+    
     let title: String
     let icon: Resources.ProfileIcon
     let price: String?
@@ -48,9 +49,7 @@ struct ButtonProfileView: View {
             }
             .fontMontserrat(weight: .medium, size: 14)
             .foregroundColor(.colorTheme.text)
-            
         }
-        
     }
 }
 

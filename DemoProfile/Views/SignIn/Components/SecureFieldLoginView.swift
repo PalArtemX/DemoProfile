@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SecureFieldLoginView: View {
+    
     private enum Field: Hashable {
         case text
     }
@@ -66,8 +67,6 @@ struct SecureFieldLoginView: View {
                         }
                 }
             }
-            
-            
         }
     }
 }

@@ -23,7 +23,6 @@ class NetworkManager {
                return "[⚠️] Unknown error"
             }
         }
-        
     }
     
     // MARK: - download

@@ -29,6 +29,7 @@ struct BrandView: View {
 
 
 
+
 struct BrandView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {

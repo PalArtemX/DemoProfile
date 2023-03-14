@@ -19,7 +19,6 @@
 		F8E9C08829BB7870006A164A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C08529BB7870006A164A /* Montserrat-Regular.ttf */; };
 		F8E9C08B29BB79F6006A164A /* FontMontserrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C08A29BB79F6006A164A /* FontMontserrat.swift */; };
 		F8E9C08D29BB8574006A164A /* Color + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C08C29BB8574006A164A /* Color + ext.swift */; };
-		F8E9C08F29BB95F1006A164A /* Image + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C08E29BB95F1006A164A /* Image + ext.swift */; };
 		F8E9C09129BB97BC006A164A /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C09029BB97BC006A164A /* TabBarItemView.swift */; };
 		F8E9C09629BB9EB5006A164A /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C09529BB9EB5006A164A /* TabBarItem.swift */; };
 		F8E9C09829BBAFC3006A164A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C09729BBAFC3006A164A /* TabBarView.swift */; };
@@ -82,7 +81,6 @@
 		F8E9C08929BB78D5006A164A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F8E9C08A29BB79F6006A164A /* FontMontserrat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontMontserrat.swift; sourceTree = "<group>"; };
 		F8E9C08C29BB8574006A164A /* Color + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + ext.swift"; sourceTree = "<group>"; };
-		F8E9C08E29BB95F1006A164A /* Image + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + ext.swift"; sourceTree = "<group>"; };
 		F8E9C09029BB97BC006A164A /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 		F8E9C09529BB9EB5006A164A /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		F8E9C09729BBAFC3006A164A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -247,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C08C29BB8574006A164A /* Color + ext.swift */,
-				F8E9C08E29BB95F1006A164A /* Image + ext.swift */,
 				F8E9C09F29BBC1A7006A164A /* View + ext.swift */,
 				F8E9C0C929BD02DC006A164A /* String + ext.swift */,
 			);
@@ -505,7 +502,6 @@
 				F8E9C0A629BBC7C8006A164A /* LikeView.swift in Sources */,
 				F8EA888729BFC4EB00D0471E /* FlashSaleView.swift in Sources */,
 				F8EA887D29BF72E100D0471E /* LoadImageForBannerView.swift in Sources */,
-				F8E9C08F29BB95F1006A164A /* Image + ext.swift in Sources */,
 				F8EA887529BF619200D0471E /* SearchView.swift in Sources */,
 				F8E9C0AA29BBC81A006A164A /* MessageView.swift in Sources */,
 				F8EA886F29BF4E9D00D0471E /* TitleNavBarHomeView.swift in Sources */,

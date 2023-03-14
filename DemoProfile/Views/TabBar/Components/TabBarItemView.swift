@@ -39,7 +39,6 @@ struct TabBarItemView: View {
             }
         }
         .background(Color.colorTheme.background)
-        
     }
 }
 

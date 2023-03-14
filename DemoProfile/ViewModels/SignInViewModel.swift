@@ -11,6 +11,7 @@ import SwiftUI
 final class SignInViewModel: ObservableObject {
     
     @AppStorage("userLoggedIn") private(set) var userLoggedIn = false
+    @Published var tabBarTag: TabBarItem = .house
     @Published private(set) var messageAlert = ""
     @Published private(set) var titleAlert = ""
     @Published var showAlert = false

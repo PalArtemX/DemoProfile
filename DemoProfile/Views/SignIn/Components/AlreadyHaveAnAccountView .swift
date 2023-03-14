@@ -18,7 +18,6 @@ struct AlreadyHaveAnAccountView: View {
             Button("Log in") {
                 action()
             }
-
         }
         .fontMontserrat(weight: .medium, size: 10)
     }

@@ -15,7 +15,6 @@ struct LatestView: View {
     
     var body: some View {
         ZStack {
-            
             LoadImageForBannerView(imageURL: latest.imageURL, width: width, height: height)
             
             HStack {
@@ -43,13 +42,10 @@ struct LatestView: View {
                         .padding(9)
                 }
             }
-            
-            
         }
         .frame(width: width, height: height)
     }
 }
-
 
 
 

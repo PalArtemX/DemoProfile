@@ -32,5 +32,4 @@ extension View {
     func fontMontserrat(weight: FontMontserrat.Weight = .regular, size: CGFloat) -> some View {
         modifier(FontMontserrat(weight: weight, size: size))
     }
-    
 }

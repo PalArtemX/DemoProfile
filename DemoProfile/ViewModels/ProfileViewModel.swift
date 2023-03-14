@@ -16,8 +16,8 @@ final class ProfileViewModel: ObservableObject {
             selectPhoto(photo: selectedPhoto)
         }
     }
-    
 }
+
 
 extension ProfileViewModel {
     
@@ -35,7 +35,4 @@ extension ProfileViewModel {
             }
         }
     }
-    
-    
-    
 }

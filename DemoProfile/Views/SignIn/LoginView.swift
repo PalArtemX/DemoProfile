@@ -35,6 +35,7 @@ struct LoginView: View {
                 // MARK: - Textfields
                 TextFieldLoginView(text: $firstName, placeholder: "First name")
                     .focused($focusedField, equals: .firstName)
+                
                 SecureFieldLoginView(text: $password, placeholder: "Password")
                     .focused($focusedField, equals: .password)
                 

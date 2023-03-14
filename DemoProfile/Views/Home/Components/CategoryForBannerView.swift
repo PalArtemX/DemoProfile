@@ -22,6 +22,9 @@ struct CategoryForBannerView: View {
     }
 }
 
+
+
+
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
         CategoryForBannerView(title: "Kids")

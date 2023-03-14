@@ -26,7 +26,6 @@ struct HeaderCarouselView: View {
                     .foregroundColor(.colorTheme.iconTabBarInactive)
                     .fontMontserrat(weight: .semibold, size: 9)
             }
-
         }
     }
 }

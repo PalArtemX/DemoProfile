@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SaleOffForBannerView: View {
+    
     let discount: Int
     
     var body: some View {

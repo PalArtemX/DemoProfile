@@ -27,10 +27,7 @@ struct ButtonForBannerView: View {
                         .frame(width: size, height: size)
                         .clipShape(Circle())
                 )
-                
         }
-        
-
     }
 }
 

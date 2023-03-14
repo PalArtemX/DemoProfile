@@ -38,7 +38,6 @@ struct PhotoNavBarHomeView: View {
                             .stroke(lineWidth: 1)
                             .foregroundColor(.colorTheme.homeSecondary)
                     }
-    
             }
             
             Button {
@@ -52,12 +51,8 @@ struct PhotoNavBarHomeView: View {
                 }
                 .fontMontserrat(weight: .medium, size: 10)
             }
-            
-
-            
         }
         .offset(x: 0, y: 12)
-        
     }
 }
 
