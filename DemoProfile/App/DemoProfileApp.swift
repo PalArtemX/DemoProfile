@@ -12,7 +12,7 @@ struct DemoProfileApp: App {
     
     @StateObject var signInViewModel = SignInViewModel()
     @StateObject var profileViewModel = ProfileViewModel()
-    @StateObject var homeViewModel = HomeViewModel()
+    @StateObject var homeViewModel = HomeViewModel(dataServices: NetworkManager())
     
     var body: some Scene {
         WindowGroup {

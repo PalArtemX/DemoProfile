@@ -40,6 +40,6 @@ struct MainTabBarView_Previews: PreviewProvider {
         MainTabBarView()
             .environmentObject(SignInViewModel())
             .environmentObject(ProfileViewModel())
-            .environmentObject(HomeViewModel())
+            .environmentObject(HomeViewModel(dataServices: NetworkManager()))
     }
 }

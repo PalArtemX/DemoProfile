@@ -10,20 +10,23 @@ import Combine
 
 final class HomeViewModel: ObservableObject {
     
+    var cancellable = Set<AnyCancellable>()
+    let dataServices: DataServiceProtocol
+    
     private let urlLatestAPI = "https://run.mocky.io/v3/cc0071a1-f06e-48fa-9e90-b1c2a61eaca7"
     private let urlFlashSaleAPI = "https://run.mocky.io/v3/a9ceeb6e-416d-4352-bde6-2203416576ac"
     
     @Published private(set) var icons: [Resources.HomeIcon] = [.phones, .headPhones, .games, .cars, .furniture, .kids]
     @Published private(set) var brands = PreviewContent.brands
     
-    @Published private(set) var latest: Latest = Latest(latests: [])
-    @Published private(set) var flashSale: FlashSale = FlashSale(flashSales: [])
+    @Published private(set) var latest = Latest(elements: [])
+    @Published private(set) var flashSale = FlashSale(elements: [])
     
     @Published private(set) var allDataUploaded = false
     
-    var cancellable = Set<AnyCancellable>()
-    
-    init() {
+   
+    init(dataServices: DataServiceProtocol) {
+        self.dataServices = dataServices
         checkingLoadingAllData()
         getLatest()
         getFlashSale()
@@ -31,13 +34,14 @@ final class HomeViewModel: ObservableObject {
 }
 
 
+// MARK: - Load data
 extension HomeViewModel {
     
     private func checkingLoadingAllData() {
         $latest
             .combineLatest($flashSale)
             .map { (latest, flashSale) -> Bool in
-                if !latest.latests.isEmpty && !flashSale.flashSales.isEmpty {
+                if !latest.elements.isEmpty && !flashSale.elements.isEmpty {
                     return true
                 } else {
                     return false
@@ -53,10 +57,10 @@ extension HomeViewModel {
     private func getLatest() {
         guard let url = URL(string: urlLatestAPI) else { return } 
         
-        NetworkManager.download(url: url)
+        dataServices.download(url: url)
             .decode(type: Latest.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
-            .sink(receiveCompletion: NetworkManager.handleCompletion, receiveValue: { [weak self] returnedLatests in
+            .sink(receiveCompletion: dataServices.handleCompletion, receiveValue: { [weak self] returnedLatests in
                 self?.latest = returnedLatests
             })
             .store(in: &cancellable)
@@ -65,10 +69,10 @@ extension HomeViewModel {
     private func getFlashSale() {
         guard let url = URL(string: urlFlashSaleAPI) else { return }
         
-        NetworkManager.download(url: url)
+        dataServices.download(url: url)
             .decode(type: FlashSale.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
-            .sink(receiveCompletion: NetworkManager.handleCompletion, receiveValue: { [weak self] returnedFlashSale in
+            .sink(receiveCompletion: dataServices.handleCompletion, receiveValue: { [weak self] returnedFlashSale in
                 self?.flashSale = returnedFlashSale
             })
             .store(in: &cancellable)

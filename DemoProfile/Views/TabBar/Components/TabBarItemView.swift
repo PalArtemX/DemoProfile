@@ -9,13 +9,13 @@ import SwiftUI
 
 struct TabBarItemView: View {
     
-    private let matchedGeometryEffectId = "CircleTavBar"
-    private let cornerRadius: CGFloat = 37
-    private let paddingBottom: CGFloat = 5
-    
     @Namespace private var namespace
     @Binding var selector: TabBarItem
     let tabs: [TabBarItem]
+    
+    private let matchedGeometryEffectId = "CircleTavBar"
+    private let cornerRadius: CGFloat = 37
+    private let paddingBottom: CGFloat = 5
     
     var body: some View {
         ZStack {

@@ -15,7 +15,7 @@ struct LatestCarouselHomeView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 12) {
                 if homeViewModel.allDataUploaded {
-                    ForEach(homeViewModel.latest.latests) { latest in
+                    ForEach(homeViewModel.latest.elements) { latest in
                         LatestView(latest: latest)
                     }
                 }
@@ -31,6 +31,6 @@ struct LatestCarouselHomeView: View {
 struct LatestCarouselHomeView_Previews: PreviewProvider {
     static var previews: some View {
         LatestCarouselHomeView()
-            .environmentObject(HomeViewModel())
+            .environmentObject(HomeViewModel(dataServices: NetworkManager()))
     }
 }

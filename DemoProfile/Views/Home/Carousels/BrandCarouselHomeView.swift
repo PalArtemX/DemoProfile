@@ -32,7 +32,7 @@ struct BrandCarouselHomeView_Previews: PreviewProvider {
         ZStack {
             Color.colorTheme.background
             BrandCarouselHomeView()
-                .environmentObject(HomeViewModel())
+                .environmentObject(HomeViewModel(dataServices: NetworkManager()))
         }
     }
 }

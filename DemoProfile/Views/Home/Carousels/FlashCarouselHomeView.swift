@@ -14,7 +14,7 @@ struct FlashCarouselHomeView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 12) {
                 if homeViewModel.allDataUploaded {
-                    ForEach(homeViewModel.flashSale.flashSales) { flashSale in
+                    ForEach(homeViewModel.flashSale.elements) { flashSale in
                         FlashSaleView(flashSale: flashSale)
                     }
                 }
@@ -30,6 +30,6 @@ struct FlashCarouselHomeView: View {
 struct FlashCarouselHomeView_Previews: PreviewProvider {
     static var previews: some View {
         FlashCarouselHomeView()
-            .environmentObject(HomeViewModel())
+            .environmentObject(HomeViewModel(dataServices: NetworkManager()))
     }
 }

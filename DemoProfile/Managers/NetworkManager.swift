@@ -8,10 +8,10 @@
 import Foundation
 import Combine
 
-class NetworkManager {
+class NetworkManager: DataServiceProtocol {
     
     // MARK: - NetworkError
-    enum NetworkError: LocalizedError {
+    private enum NetworkError: LocalizedError {
         case badURLResponse(url: URL)
         case unknown
         
@@ -26,15 +26,15 @@ class NetworkManager {
     }
     
     // MARK: - download
-    static func download(url: URL) -> AnyPublisher<Data, Error> {
+    func download(url: URL) -> AnyPublisher<Data, Error> {
         URLSession.shared.dataTaskPublisher(for: url)
-            .tryMap({ try handleURLResponse(output: $0, url: url )})
+            .tryMap({ try self.handleURLResponse(output: $0, url: url )})
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
     
     // MARK: - handleURLResponse
-    static func handleURLResponse(output: URLSession.DataTaskPublisher.Output, url: URL) throws -> Data {
+    func handleURLResponse(output: URLSession.DataTaskPublisher.Output, url: URL) throws -> Data {
         guard
             let response = output.response as? HTTPURLResponse,
             response.statusCode >= 200 && response.statusCode < 300 else {
@@ -44,12 +44,12 @@ class NetworkManager {
     }
     
     // MARK: - handleCompletion
-    static func handleCompletion(completion: Subscribers.Completion<Error>) {
+    func handleCompletion(completion: Subscribers.Completion<Error>) {
         switch completion {
         case .finished:
-            print("Completion finished")
+            print("[✅] Completion finished")
         case .failure(let error):
-            print("Error \(error.localizedDescription)")
+            print("[⚠️] Error \(error.localizedDescription)")
         }
     }
 }

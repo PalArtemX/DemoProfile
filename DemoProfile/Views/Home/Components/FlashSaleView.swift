@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FlashSaleView: View {
     
-    let flashSale: FlashSaleElement
+    let flashSale: FlashSale.Element
     let width: CGFloat = 170
     let height: CGFloat = 220
     

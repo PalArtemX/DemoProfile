@@ -14,8 +14,8 @@ struct IconCarouselHomeView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 20.0) {
-                ForEach(homeViewModel.icons, id: \.self) { item in
-                    IconHomeView(item: item)
+                ForEach(homeViewModel.icons, id: \.self) { icon in
+                    IconHomeView(item: icon)
                 }
             }
             .padding()
@@ -29,6 +29,6 @@ struct IconCarouselHomeView: View {
 struct IconCarouselHomeView_Previews: PreviewProvider {
     static var previews: some View {
         IconCarouselHomeView()
-            .environmentObject(HomeViewModel())
+            .environmentObject(HomeViewModel(dataServices: NetworkManager()))
     }
 }

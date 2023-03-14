@@ -10,8 +10,8 @@ import SwiftUI
 struct TabBarView<Content: View>: View {
     
     @Binding var selection: TabBarItem
-    let content: Content
     @State private var tabs: [TabBarItem] = []
+    let content: Content
     
     init(selection: Binding<TabBarItem>, @ViewBuilder content: () -> Content) {
         self._selection = selection

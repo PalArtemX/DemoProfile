@@ -7,25 +7,28 @@
 
 import Foundation
 
-// MARK: - FlashSale
 struct FlashSale: Codable {
-    let flashSales: [FlashSaleElement]
+    
+    // MARK: Element
+    struct Element: Codable, Identifiable {
+        let id = UUID()
+        let category, name: String
+        let price: Double
+        let discount: Int
+        let imageURL: String
+
+        enum CodingKeys: String, CodingKey {
+            case category, name, price, discount
+            case imageURL = "image_url"
+        }
+    }
+    
+    let elements: [Element]
 
     enum CodingKeys: String, CodingKey {
-        case flashSales = "flash_sale"
+        case elements = "flash_sale"
     }
+    
+    
 }
 
-// MARK: - FlashSaleElement
-struct FlashSaleElement: Codable, Identifiable {
-    let id = UUID()
-    let category, name: String
-    let price: Double
-    let discount: Int
-    let imageURL: String
-
-    enum CodingKeys: String, CodingKey {
-        case category, name, price, discount
-        case imageURL = "image_url"
-    }
-}
