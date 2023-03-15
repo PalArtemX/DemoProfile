@@ -31,6 +31,7 @@ final class SignInViewModel: ObservableObject {
 }
 
 
+
 extension SignInViewModel {
     // Since there is no password input in the user interface during registration, registration and user login are implemented with stubs
     
