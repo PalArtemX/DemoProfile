@@ -160,6 +160,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		F8B058E129C10EC0003B349F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		F8E9C03E29BB691F006A164A = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C0A329BBC753006A164A /* HomeView.swift */,
+				F8B058E129C10EC0003B349F /* Detail */,
 				F8EA889929C0C05500D0471E /* Carousels */,
 				F8EA886629BF3D3B00D0471E /* Components */,
 			);

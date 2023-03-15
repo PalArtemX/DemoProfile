@@ -13,11 +13,9 @@ struct FlashCarouselHomeView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 12) {
-                if homeViewModel.allDataUploaded {
                     ForEach(homeViewModel.flashSale.elements) { flashSale in
                         FlashSaleView(flashSale: flashSale)
                     }
-                }
             }
             .padding()
         }

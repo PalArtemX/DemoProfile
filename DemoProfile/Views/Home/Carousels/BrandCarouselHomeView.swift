@@ -13,11 +13,9 @@ struct BrandCarouselHomeView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 12) {
-                if homeViewModel.allDataUploaded {
                     ForEach(homeViewModel.brands, id: \.self) { brand in
                         BrandView(brand: brand)
                     }
-                }
             }
             .padding()
         }

@@ -28,14 +28,18 @@ final class HomeViewModel: ObservableObject {
     init(dataServices: DataServiceProtocol) {
         self.dataServices = dataServices
         checkingLoadingAllData()
-        getLatest()
-        getFlashSale()
+        loadingData()
     }
 }
 
 
 // MARK: - Load data
 extension HomeViewModel {
+    
+    func loadingData() {
+        getFlashSale()
+        getLatest()
+    }
     
     private func checkingLoadingAllData() {
         $latest

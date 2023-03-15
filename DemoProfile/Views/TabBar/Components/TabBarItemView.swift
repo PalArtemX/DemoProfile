@@ -14,31 +14,26 @@ struct TabBarItemView: View {
     let tabs: [TabBarItem]
     
     private let matchedGeometryEffectId = "CircleTavBar"
-    private let cornerRadius: CGFloat = 37
     private let paddingBottom: CGFloat = 5
     
     var body: some View {
         ZStack {
-            VStack {
-                HStack {
-                    ForEach(tabs, id: \.self) { tab in
-                        Spacer()
-                        tabView(tab: tab)
-                            .padding(.bottom, paddingBottom)
-                            .onTapGesture {
-                                switchToTab(tab: tab)
-                            }
-                        Spacer()
-                    }
+            HStack {
+                ForEach(tabs, id: \.self) { tab in
+                    Spacer()
+                    tabView(tab: tab)
+                        .padding(.bottom, paddingBottom)
+                        .onTapGesture {
+                            switchToTab(tab: tab)
+                        }
+                    Spacer()
                 }
-                .padding()
-                .background(
-                    Color.white.ignoresSafeArea(.all, edges: .bottom)
-                )
-                .cornerRadius(cornerRadius, corners: [.topLeft, .topRight])
             }
+            .padding()
+            .background(
+                Color.white
+            )
         }
-        .background(Color.colorTheme.background)
     }
 }
 

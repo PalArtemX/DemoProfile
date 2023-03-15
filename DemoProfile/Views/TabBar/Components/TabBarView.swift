@@ -11,6 +11,7 @@ struct TabBarView<Content: View>: View {
     
     @Binding var selection: TabBarItem
     @State private var tabs: [TabBarItem] = []
+    private let cornerRadius: CGFloat = 37
     let content: Content
     
     init(selection: Binding<TabBarItem>, @ViewBuilder content: () -> Content) {
@@ -22,8 +23,14 @@ struct TabBarView<Content: View>: View {
         VStack(spacing: 0) {
             ZStack {
                 content
+                VStack {
+                    Spacer()
+                    TabBarItemView(selector: $selection, tabs: tabs)
+                        .cornerRadius(cornerRadius, corners: [.topRight, .topLeft])
+                        .ignoresSafeArea()
+                }
             }
-            TabBarItemView(selector: $selection, tabs: tabs)
+            
         }
         .ignoresSafeArea()
         .onPreferenceChange(TabBarItemsPreferenceKey.self) { value in

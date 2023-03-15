@@ -28,7 +28,6 @@ struct MainTabBarView: View {
             ProfileView()
                 .tabBarItem(tab: .account, selection: $signInViewModel.tabBarTag)
         }
-        .ignoresSafeArea()
     }
 }
 

@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject var homeViewModel: HomeViewModel
+    
     var body: some View {
         NavigationStack {
             ZStack {
                 Color.colorTheme.background.ignoresSafeArea()
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     VStack(spacing: 0.0) {
                         // MARK: - Search
                         SearchView()
@@ -23,28 +26,32 @@ struct HomeView: View {
                         IconCarouselHomeView()
                             .padding(.bottom)
                         
-                        // MARK: - Latest Carousel
-                        HeaderCarouselView(title: "Latest") {}
-                            .padding(.horizontal)
-                            .padding(.top)
-                        LatestCarouselHomeView()
-                            .padding(.bottom)
-                        
-                        // MARK: - Flash Sale
-                        HeaderCarouselView(title: "Flash Sale") {}
-                            .padding(.horizontal)
-                            .padding(.top)
-                        
-                        FlashCarouselHomeView()
-                            .padding(.bottom)
-                        
-                        // MARK: - Brands
-                        HeaderCarouselView(title: "Brands") {}
-                            .padding(.horizontal)
-                            .padding(.top)
-                        
-                        BrandCarouselHomeView()
-                            .padding(.bottom)
+                        if homeViewModel.allDataUploaded {
+                            VStack {
+                                // MARK: - Latest Carousel
+                                HeaderCarouselView(title: "Latest") {}
+                                    .padding(.horizontal)
+                                    .padding(.top)
+                                LatestCarouselHomeView()
+                                    .padding(.bottom)
+                                
+                                // MARK: - Flash Sale
+                                HeaderCarouselView(title: "Flash Sale") {}
+                                    .padding(.horizontal)
+                                    .padding(.top)
+                                
+                                FlashCarouselHomeView()
+                                    .padding(.bottom)
+                                
+                                // MARK: - Brands
+                                HeaderCarouselView(title: "Brands") {}
+                                    .padding(.horizontal)
+                                    .padding(.top)
+                                
+                                BrandCarouselHomeView()
+                                    .padding(.bottom)
+                            }
+                        }
                     }
                     .toolbar {
                         ToolbarItem(placement: .principal) {
@@ -63,6 +70,9 @@ struct HomeView: View {
                             PhotoNavBarHomeView()
                         }
                     }
+                }
+                .refreshable {
+                    homeViewModel.loadingData()
                 }
             }
         }
