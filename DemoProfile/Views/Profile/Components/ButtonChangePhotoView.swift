@@ -15,7 +15,7 @@ struct ButtonChangePhotoView: View {
     var body: some View {
         PhotosPicker(selection: $profileViewModel.selectedPhoto, matching: .images, photoLibrary: .shared()) {
             Text("Change photo")
-                .fontMontserrat(weight: .medium, size: 9)
+                .fontMontserrat(weight: .medium, size: 10)
                 .foregroundColor(.colorTheme.profileSecondary)
         }
     }
