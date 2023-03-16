@@ -18,14 +18,8 @@ struct DetailView: View {
             Color.colorTheme.background.ignoresSafeArea()
             
             VStack(alignment: .leading) {
-                
-                
-                // MARK: - Photo Carousel
+                // MARK: - Photo
                 PhotoCarouselDetailView(imageURLs: detail.imageUrls)
-                    .offset(x: 0, y: -75)
-                
-                // MARK: - Photo Piker
-                
                 
                 VStack(alignment: .leading) {
                     // MARK: - Header and Price

@@ -12,6 +12,8 @@
 		F8090E5729BF1B5B000A45E9 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8090E5629BF1B5B000A45E9 /* ProfileViewModel.swift */; };
 		F8090E5929BF1C25000A45E9 /* ButtonChangePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8090E5829BF1C25000A45E9 /* ButtonChangePhotoView.swift */; };
 		F82224C329C3428D0022EB9A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82224C229C3428D0022EB9A /* DetailViewModel.swift */; };
+		F82224C529C36F370022EB9A /* ButtonSelectColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82224C429C36F370022EB9A /* ButtonSelectColorView.swift */; };
+		F82224C729C3702D0022EB9A /* ButtonSelectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82224C629C3702D0022EB9A /* ButtonSelectImageView.swift */; };
 		F86BEDEC29C1DA8400925B8E /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDEB29C1DA8400925B8E /* Word.swift */; };
 		F86BEDEE29C221B000925B8E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDED29C221B000925B8E /* DetailView.swift */; };
 		F86BEDF129C2282500925B8E /* AddToCardPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDF029C2282500925B8E /* AddToCardPanelView.swift */; };
@@ -85,6 +87,8 @@
 		F8090E5629BF1B5B000A45E9 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		F8090E5829BF1C25000A45E9 /* ButtonChangePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChangePhotoView.swift; sourceTree = "<group>"; };
 		F82224C229C3428D0022EB9A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F82224C429C36F370022EB9A /* ButtonSelectColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSelectColorView.swift; sourceTree = "<group>"; };
+		F82224C629C3702D0022EB9A /* ButtonSelectImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSelectImageView.swift; sourceTree = "<group>"; };
 		F86BEDEB29C1DA8400925B8E /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		F86BEDED29C221B000925B8E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F86BEDF029C2282500925B8E /* AddToCardPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCardPanelView.swift; sourceTree = "<group>"; };
@@ -187,13 +191,12 @@
 		F86BEDEF29C221B400925B8E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F82224C629C3702D0022EB9A /* ButtonSelectImageView.swift */,
 				F86BEDFC29C260D000925B8E /* HeaderAndPriceView.swift */,
 				F86BEDFA29C2603400925B8E /* RatingView.swift */,
-				F86BEDF629C2332C00925B8E /* ColorPickerDetailView.swift */,
-				F86BEDF029C2282500925B8E /* AddToCardPanelView.swift */,
+				F82224C429C36F370022EB9A /* ButtonSelectColorView.swift */,
 				F86BEDF429C22C7600925B8E /* ButtonAddToCardView.swift */,
 				F86BEDF229C22B1A00925B8E /* ButtonPlusMinusView.swift */,
-				F86BEDFE29C3177300925B8E /* PhotoCarouselDetailView.swift */,
 				F86BEE0029C31BCE00925B8E /* ButtonsLikeAndFavouritesView.swift */,
 			);
 			path = Components;
@@ -203,6 +206,9 @@
 			isa = PBXGroup;
 			children = (
 				F86BEDED29C221B000925B8E /* DetailView.swift */,
+				F86BEDF629C2332C00925B8E /* ColorPickerDetailView.swift */,
+				F86BEDF029C2282500925B8E /* AddToCardPanelView.swift */,
+				F86BEDFE29C3177300925B8E /* PhotoCarouselDetailView.swift */,
 				F86BEDEF29C221B400925B8E /* Components */,
 			);
 			path = Detail;
@@ -545,6 +551,7 @@
 				F8EA887729BF6A6E00D0471E /* HeaderCarouselView.swift in Sources */,
 				F86BEDEE29C221B000925B8E /* DetailView.swift in Sources */,
 				F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */,
+				F82224C729C3702D0022EB9A /* ButtonSelectImageView.swift in Sources */,
 				F8EA886929BF471700D0471E /* IconHomeView.swift in Sources */,
 				F8EA888B29BFCF4300D0471E /* ImageForBannerView.swift in Sources */,
 				F8E9C09A29BBB25D006A164A /* MainTabBarView.swift in Sources */,
@@ -578,6 +585,7 @@
 				F8E9C0C429BCC490006A164A /* User.swift in Sources */,
 				F8EA886D29BF4BF700D0471E /* IconCarouselHomeView.swift in Sources */,
 				F8EA887F29BF745E00D0471E /* ButtonForBannerView.swift in Sources */,
+				F82224C529C36F370022EB9A /* ButtonSelectColorView.swift in Sources */,
 				F86BEDF729C2332C00925B8E /* ColorPickerDetailView.swift in Sources */,
 				F8E9C0C629BCC4E5006A164A /* SignInViewModel.swift in Sources */,
 				F8EA887B29BF6EEE00D0471E /* LatestView.swift in Sources */,
