@@ -114,5 +114,4 @@ extension SignInViewModel {
             return true
         }
     }
-    
 }

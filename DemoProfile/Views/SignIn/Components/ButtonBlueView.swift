@@ -47,7 +47,6 @@ struct ButtonBlueView: View {
             .fontMontserrat(weight: .bold, size: 14)
             .cornerRadius(15)
         }
-        
     }
 }
 

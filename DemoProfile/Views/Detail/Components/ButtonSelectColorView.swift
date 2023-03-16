@@ -9,17 +9,25 @@ import SwiftUI
 
 struct ButtonSelectColorView: View {
     
+    let select: Int
     let hex: String
-    let select: Bool
     let action: () -> ()
-
+    
     var body: some View {
-        Text("Hello, World!")
+            RoundedRectangle(cornerRadius: 10)
+                .frame(width: 34, height: 28)
+                .foregroundColor(Color(hex: hex))
+                .onTapGesture {
+                    action()
+                }
     }
 }
 
+
+
+
 struct ButtonSelectColorView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonSelectColorView(hex: "", select: true, action: {})
+        ButtonSelectColorView(select: 1, hex: "#b5b5b5", action: {})
     }
 }

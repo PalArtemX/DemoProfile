@@ -13,7 +13,6 @@ struct ButtonSelectImageView: View {
     let imageURL: String
     let action: () -> ()
     
-    
     var body: some View {
         Button {
             action()

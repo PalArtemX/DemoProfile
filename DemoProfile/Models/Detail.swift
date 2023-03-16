@@ -8,6 +8,7 @@
 import Foundation
 
 struct Detail: Codable {
+    
     let name, description: String
     let rating: Double
     let numberOfReviews, price: Int

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BrandCarouselHomeView: View {
+    
     @EnvironmentObject var homeViewModel: HomeViewModel
     
     var body: some View {

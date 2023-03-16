@@ -69,5 +69,4 @@ enum Resources {
             }
         }
     }
-    
 }

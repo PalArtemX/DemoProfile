@@ -34,18 +34,17 @@ struct ColorTheme {
     let homeSecondary = Color("homeSecondary")
     
     let addToCardPanelBackground = Color("addToCardPanelBackground")
-    
 }
 
 
 extension Color {
 
     static let colorTheme = ColorTheme()
-    
 }
 
 // MARK: - Hex Color
 extension Color {
+    
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0

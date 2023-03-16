@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FlashCarouselHomeView: View {
+    
     @EnvironmentObject var homeViewModel: HomeViewModel
     @EnvironmentObject var detailViewModel: DetailViewModel
     @State private var isShowDetailView = false

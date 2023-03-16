@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
     @EnvironmentObject var signInViewModel: SignInViewModel
     @State private var isShowAlert = false
     

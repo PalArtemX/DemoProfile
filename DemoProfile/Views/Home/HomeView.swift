@@ -26,7 +26,6 @@ struct HomeView: View {
                         IconCarouselHomeView()
                             .padding(.bottom)
                         
-                        
                             VStack {
                                 // MARK: - Latest Carousel
                                 HeaderCarouselView(title: "Latest") {}
@@ -52,7 +51,6 @@ struct HomeView: View {
                                     .padding(.bottom)
                             }
                             .opacity(homeViewModel.allDataUploaded ? 1 : 0)
-                        
                     }
                     .toolbar {
                         ToolbarItem(placement: .principal) {

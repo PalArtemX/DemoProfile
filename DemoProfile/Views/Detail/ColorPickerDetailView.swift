@@ -19,21 +19,22 @@ struct ColorPickerDetailView: View {
                 .foregroundColor(.colorTheme.profileSecondary)
             
             HStack(spacing: 14.0) {
-                ForEach(hexColors, id: \.self) { hex in
-                    
-                    RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 34, height: 28)
-                        .foregroundColor(Color(hex: hex))
-                        .overlay {
+                
+                ForEach(0..<hexColors.count, id: \.self) { index in
+                    ButtonSelectColorView(select: index, hex: hexColors[index]) {
+                        withAnimation(.default) {
+                            selection = index
+                        }
+                    }
+                    .overlay {
+                        if selection == index {
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(lineWidth: 4)
                                 .cornerRadius(10)
                                 .foregroundColor(.colorTheme.profileSecondary)
                                 .frame(width: 34, height: 28)
                         }
-                        .onTapGesture {
-                            
-                        }
+                    }
                 }
             }
         }

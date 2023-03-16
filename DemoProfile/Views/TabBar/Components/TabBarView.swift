@@ -30,7 +30,6 @@ struct TabBarView<Content: View>: View {
                         .ignoresSafeArea()
                 }
             }
-            
         }
         .ignoresSafeArea()
         .onPreferenceChange(TabBarItemsPreferenceKey.self) { value in

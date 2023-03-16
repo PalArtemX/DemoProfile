@@ -53,7 +53,6 @@ struct SearchView: View {
                             }
                         }
                 }
-                
             }
             // MARK: - Search List
             if homeViewModel.isShowSearch {

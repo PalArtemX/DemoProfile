@@ -38,5 +38,4 @@ extension DetailViewModel {
             }
             .store(in: &cancellable)
     }
-    
 }
