@@ -26,7 +26,6 @@ final class HomeViewModel: ObservableObject {
     // data carousels
     @Published private(set) var latest = Latest(elements: [])
     @Published private(set) var flashSale = FlashSale(elements: [])
-    
     @Published private(set) var allDataUploaded = false
     
     // search
@@ -41,8 +40,7 @@ final class HomeViewModel: ObservableObject {
         }
     }
     @Published var resultSearch: [String] = []
-    @Published private(set) var wordSearch = Word(words: [])
-    
+    @Published private(set) var wordSearch = Word(words: [])  
 
     init(dataServices: DataServiceProtocol) {
         self.dataServices = dataServices
@@ -142,3 +140,6 @@ extension HomeViewModel {
             .store(in: &cancellable)
     }
 }
+
+
+

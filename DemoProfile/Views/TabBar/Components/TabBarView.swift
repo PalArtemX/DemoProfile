@@ -11,7 +11,7 @@ struct TabBarView<Content: View>: View {
     
     @Binding var selection: TabBarItem
     @State private var tabs: [TabBarItem] = []
-    private let cornerRadius: CGFloat = 37
+    private let cornerRadius: CGFloat = 35
     let content: Content
     
     init(selection: Binding<TabBarItem>, @ViewBuilder content: () -> Content) {

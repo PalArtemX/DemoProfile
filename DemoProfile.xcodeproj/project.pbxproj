@@ -11,7 +11,18 @@
 		F8090E5529BE5C6B000A45E9 /* PhotoUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8090E5429BE5C6B000A45E9 /* PhotoUserView.swift */; };
 		F8090E5729BF1B5B000A45E9 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8090E5629BF1B5B000A45E9 /* ProfileViewModel.swift */; };
 		F8090E5929BF1C25000A45E9 /* ButtonChangePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8090E5829BF1C25000A45E9 /* ButtonChangePhotoView.swift */; };
+		F82224C329C3428D0022EB9A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82224C229C3428D0022EB9A /* DetailViewModel.swift */; };
 		F86BEDEC29C1DA8400925B8E /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDEB29C1DA8400925B8E /* Word.swift */; };
+		F86BEDEE29C221B000925B8E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDED29C221B000925B8E /* DetailView.swift */; };
+		F86BEDF129C2282500925B8E /* AddToCardPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDF029C2282500925B8E /* AddToCardPanelView.swift */; };
+		F86BEDF329C22B1A00925B8E /* ButtonPlusMinusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDF229C22B1A00925B8E /* ButtonPlusMinusView.swift */; };
+		F86BEDF529C22C7600925B8E /* ButtonAddToCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDF429C22C7600925B8E /* ButtonAddToCardView.swift */; };
+		F86BEDF729C2332C00925B8E /* ColorPickerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDF629C2332C00925B8E /* ColorPickerDetailView.swift */; };
+		F86BEDF929C24E4E00925B8E /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDF829C24E4E00925B8E /* Detail.swift */; };
+		F86BEDFB29C2603400925B8E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDFA29C2603400925B8E /* RatingView.swift */; };
+		F86BEDFD29C260D000925B8E /* HeaderAndPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDFC29C260D000925B8E /* HeaderAndPriceView.swift */; };
+		F86BEDFF29C3177300925B8E /* PhotoCarouselDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEDFE29C3177300925B8E /* PhotoCarouselDetailView.swift */; };
+		F86BEE0129C31BCE00925B8E /* ButtonsLikeAndFavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BEE0029C31BCE00925B8E /* ButtonsLikeAndFavouritesView.swift */; };
 		F8E9C04B29BB691F006A164A /* DemoProfileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9C04A29BB691F006A164A /* DemoProfileApp.swift */; };
 		F8E9C04F29BB691F006A164A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C04E29BB691F006A164A /* Assets.xcassets */; };
 		F8E9C05229BB691F006A164A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E9C05129BB691F006A164A /* Preview Assets.xcassets */; };
@@ -73,7 +84,18 @@
 		F8090E5429BE5C6B000A45E9 /* PhotoUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUserView.swift; sourceTree = "<group>"; };
 		F8090E5629BF1B5B000A45E9 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		F8090E5829BF1C25000A45E9 /* ButtonChangePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChangePhotoView.swift; sourceTree = "<group>"; };
+		F82224C229C3428D0022EB9A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		F86BEDEB29C1DA8400925B8E /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		F86BEDED29C221B000925B8E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F86BEDF029C2282500925B8E /* AddToCardPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCardPanelView.swift; sourceTree = "<group>"; };
+		F86BEDF229C22B1A00925B8E /* ButtonPlusMinusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPlusMinusView.swift; sourceTree = "<group>"; };
+		F86BEDF429C22C7600925B8E /* ButtonAddToCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAddToCardView.swift; sourceTree = "<group>"; };
+		F86BEDF629C2332C00925B8E /* ColorPickerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerDetailView.swift; sourceTree = "<group>"; };
+		F86BEDF829C24E4E00925B8E /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		F86BEDFA29C2603400925B8E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		F86BEDFC29C260D000925B8E /* HeaderAndPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAndPriceView.swift; sourceTree = "<group>"; };
+		F86BEDFE29C3177300925B8E /* PhotoCarouselDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCarouselDetailView.swift; sourceTree = "<group>"; };
+		F86BEE0029C31BCE00925B8E /* ButtonsLikeAndFavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsLikeAndFavouritesView.swift; sourceTree = "<group>"; };
 		F8E9C04729BB691F006A164A /* DemoProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E9C04A29BB691F006A164A /* DemoProfileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProfileApp.swift; sourceTree = "<group>"; };
 		F8E9C04E29BB691F006A164A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,9 +184,26 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		F86BEDEF29C221B400925B8E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F86BEDFC29C260D000925B8E /* HeaderAndPriceView.swift */,
+				F86BEDFA29C2603400925B8E /* RatingView.swift */,
+				F86BEDF629C2332C00925B8E /* ColorPickerDetailView.swift */,
+				F86BEDF029C2282500925B8E /* AddToCardPanelView.swift */,
+				F86BEDF429C22C7600925B8E /* ButtonAddToCardView.swift */,
+				F86BEDF229C22B1A00925B8E /* ButtonPlusMinusView.swift */,
+				F86BEDFE29C3177300925B8E /* PhotoCarouselDetailView.swift */,
+				F86BEE0029C31BCE00925B8E /* ButtonsLikeAndFavouritesView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F8B058E129C10EC0003B349F /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				F86BEDED29C221B000925B8E /* DetailView.swift */,
+				F86BEDEF29C221B400925B8E /* Components */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -224,6 +263,7 @@
 				F8E9C0AD29BC8824006A164A /* SignIn */,
 				F8E9C09429BB9E8B006A164A /* TabBar */,
 				F8EA886229BF30F500D0471E /* Home */,
+				F8B058E129C10EC0003B349F /* Detail */,
 				F8EA886329BF310200D0471E /* Like */,
 				F8EA886429BF310900D0471E /* Basket */,
 				F8EA886529BF311000D0471E /* Message */,
@@ -238,6 +278,7 @@
 				F8E9C0C529BCC4E5006A164A /* SignInViewModel.swift */,
 				F8090E5629BF1B5B000A45E9 /* ProfileViewModel.swift */,
 				F8EA886A29BF4AB900D0471E /* HomeViewModel.swift */,
+				F82224C229C3428D0022EB9A /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -249,6 +290,7 @@
 				F8EA887829BF6D5600D0471E /* Latest.swift */,
 				F8EA888429BFC49A00D0471E /* FlashSale.swift */,
 				F86BEDEB29C1DA8400925B8E /* Word.swift */,
+				F86BEDF829C24E4E00925B8E /* Detail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,7 +373,6 @@
 			isa = PBXGroup;
 			children = (
 				F8E9C0A329BBC753006A164A /* HomeView.swift */,
-				F8B058E129C10EC0003B349F /* Detail */,
 				F8EA889929C0C05500D0471E /* Carousels */,
 				F8EA886629BF3D3B00D0471E /* Components */,
 			);
@@ -479,14 +520,20 @@
 				F8E9C09129BB97BC006A164A /* TabBarItemView.swift in Sources */,
 				F8F674E329C0F3BA00814CD5 /* DataServiceProtocol.swift in Sources */,
 				F8E9C0A029BBC1A7006A164A /* View + ext.swift in Sources */,
+				F86BEDFB29C2603400925B8E /* RatingView.swift in Sources */,
+				F86BEDF529C22C7600925B8E /* ButtonAddToCardView.swift in Sources */,
 				F8090E5729BF1B5B000A45E9 /* ProfileViewModel.swift in Sources */,
 				F8EA886B29BF4AB900D0471E /* HomeViewModel.swift in Sources */,
 				F8E9C0BC29BCA577006A164A /* ButtonSignInAlternativeView.swift in Sources */,
+				F86BEE0129C31BCE00925B8E /* ButtonsLikeAndFavouritesView.swift in Sources */,
 				F8E9C0A829BBC7F8006A164A /* BasketView.swift in Sources */,
+				F86BEDF929C24E4E00925B8E /* Detail.swift in Sources */,
 				F8E9C09829BBAFC3006A164A /* TabBarView.swift in Sources */,
 				F8E9C0B729BCA091006A164A /* AlreadyHaveAnAccountView .swift in Sources */,
 				F8EA888129BF769900D0471E /* CategoryForBannerView.swift in Sources */,
 				F8EA888D29BFD00300D0471E /* FlashCarouselHomeView.swift in Sources */,
+				F82224C329C3428D0022EB9A /* DetailViewModel.swift in Sources */,
+				F86BEDFD29C260D000925B8E /* HeaderAndPriceView.swift in Sources */,
 				F8090E5929BF1C25000A45E9 /* ButtonChangePhotoView.swift in Sources */,
 				F8E9C0B329BC8942006A164A /* TextFieldLoginView.swift in Sources */,
 				F8E9C04B29BB691F006A164A /* DemoProfileApp.swift in Sources */,
@@ -494,7 +541,9 @@
 				F8EA888929BFCD8500D0471E /* SaleOffForBannerView.swift in Sources */,
 				F8EA889129C07A0500D0471E /* BrandCarouselHomeView.swift in Sources */,
 				F8EA889629C08B4C00D0471E /* NetworkManager.swift in Sources */,
+				F86BEDF129C2282500925B8E /* AddToCardPanelView.swift in Sources */,
 				F8EA887729BF6A6E00D0471E /* HeaderCarouselView.swift in Sources */,
+				F86BEDEE29C221B000925B8E /* DetailView.swift in Sources */,
 				F8E9C0C229BCBF4B006A164A /* LoginView.swift in Sources */,
 				F8EA886929BF471700D0471E /* IconHomeView.swift in Sources */,
 				F8EA888B29BFCF4300D0471E /* ImageForBannerView.swift in Sources */,
@@ -512,11 +561,13 @@
 				F8E9C09629BB9EB5006A164A /* TabBarItem.swift in Sources */,
 				F8EA889329C07B5500D0471E /* PreviewContent.swift in Sources */,
 				F8090E5329BE553A000A45E9 /* ButtonProfileView.swift in Sources */,
+				F86BEDFF29C3177300925B8E /* PhotoCarouselDetailView.swift in Sources */,
 				F8E9C0AC29BBC831006A164A /* ProfileView.swift in Sources */,
 				F8E9C0A429BBC753006A164A /* HomeView.swift in Sources */,
 				F8E9C0A629BBC7C8006A164A /* LikeView.swift in Sources */,
 				F8EA888729BFC4EB00D0471E /* FlashSaleView.swift in Sources */,
 				F8EA887D29BF72E100D0471E /* LoadImageForBannerView.swift in Sources */,
+				F86BEDF329C22B1A00925B8E /* ButtonPlusMinusView.swift in Sources */,
 				F8EA887529BF619200D0471E /* SearchView.swift in Sources */,
 				F8E9C0AA29BBC81A006A164A /* MessageView.swift in Sources */,
 				F8EA886F29BF4E9D00D0471E /* TitleNavBarHomeView.swift in Sources */,
@@ -527,6 +578,7 @@
 				F8E9C0C429BCC490006A164A /* User.swift in Sources */,
 				F8EA886D29BF4BF700D0471E /* IconCarouselHomeView.swift in Sources */,
 				F8EA887F29BF745E00D0471E /* ButtonForBannerView.swift in Sources */,
+				F86BEDF729C2332C00925B8E /* ColorPickerDetailView.swift in Sources */,
 				F8E9C0C629BCC4E5006A164A /* SignInViewModel.swift in Sources */,
 				F8EA887B29BF6EEE00D0471E /* LatestView.swift in Sources */,
 			);

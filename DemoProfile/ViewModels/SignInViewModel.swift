@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 final class SignInViewModel: ObservableObject {
     
     @AppStorage("userLoggedIn") private(set) var userLoggedIn = false

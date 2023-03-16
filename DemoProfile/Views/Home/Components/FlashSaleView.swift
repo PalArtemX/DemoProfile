@@ -30,6 +30,7 @@ struct FlashSaleView: View {
                         .fontMontserrat(weight: .bold, size: 12)
                         .padding(.bottom)
                         .shadow(radius: 2)
+                        .multilineTextAlignment(.leading)
                     
                     Text("$ \(String(format:"%.2f", flashSale.price))")
                         .foregroundColor(.white)
@@ -39,7 +40,7 @@ struct FlashSaleView: View {
                 .padding(6)
                 Spacer()
                 
-                VStack {
+                VStack(alignment: .leading) {
                     SaleOffForBannerView(discount: flashSale.discount)
                         .padding(.top, 10)
         
